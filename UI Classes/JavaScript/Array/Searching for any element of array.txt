@@ -1,0 +1,12 @@
+Searching for any element in array
+==================================
+
+method                   Description
+======================================================================================================================
+
+1) Indexof()           It returns index number of specified value in an array. It returns -1 if the value is not found.
+
+2) lastIndexof()       It reurns the last occurance index number of even element.
+
+3) filter()            It can search for any element and return it based on the given condition.
+

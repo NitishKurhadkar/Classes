@@ -1,0 +1,91 @@
+Adding values into array
+=======================
+
+method                      Description
+=======================================================================================
+
+1) Push                     It is used to add a new value into array as last item.
+
+2) unshift                  It adds a new value into array as first title
+ 
+3) splice                   It adds a new value at specified index
+
+===========================================================================================
+
+Syntax:-
+=======
+
+      array.push(val1,val2,....)
+      
+      array.unshift(
+  
+      array.splice(startindex,noofelements toremove,newelements...");
+===========================================================================================
+
+Ex:-
+====
+  <script>
+          "use strict";
+          function f1(){
+              var productsNames=["TV","Mobile","Watch"];
+              function Printvalues{
+                                            document.write(productNames.toString()+"<br>");
+                                  }
+           Printvalues();
+            productNames.splice(2,0,"Nike Shoe","Boot");
+   
+          PrintValues();
+         }
+     f1();
+    </script>
+       
+
+*Remove Elements from array             
+===========================
+
+method                        Description
+
+===========================================================================
+1) pop()                   It removes and returns the last item 
+
+2) shift()                 It removes and returns the first item
+
+3) splice()                It removes any specified itme by its index number
+============================================================================
+
+Ex:-
+===
+ 
+   <script>
+    "use strict"
+     function f1(){
+                var productNames=["TV","mobile","Shoe"];
+                function PrintValues(){
+                                 document.write(productNmes.toString()+"<br>");
+                                     }
+                           PrintValues();
+                          var item = productNames.splice(1,1);
+                          document.write(item+"-Removed<br>")
+                           Printvalues();
+                   }\           
+                    f1();
+       </script>
+
+
+Concat Array
+============
+
+You can combine the value of multiple arrayss and store in a single array reference. The funtion concat() can add values of existing array into the current array.
+Ex-
+==
+   <script>
+    "use strict"
+     function f1(){
+           var electronics=["samsung TV", "Mobile"];
+           var Shoes=["Nike" , "Puma"];
+           var products=electronics.concat(shoes);
+           document.write(products.toString());
+       }
+  f1();
+ </script>
+

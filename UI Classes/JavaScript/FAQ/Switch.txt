@@ -1,0 +1,87 @@
+Switch
+======
+
+
+FAQ
+===
+
+1) can you define switch without break?
+Ans = Yes, It will stop execution where break found.
+
+2) can you define switch without default?
+Ans = Yes, No action will be performed if the  action is not matching.
+
+3)can you define default at the top above cases?
+Ans = Yes, there is no order for default in the switch
+
+4) Is switch statement is case sensitive?
+Ans = Yes
+
+5) Then how you will handle multiple cases for different capitalization
+Ans = You can define multiple cases for ssingle block of statements every case can configure this specific capitalization.
+
+Example:-
+======
+
+<script>
+    function f1(){
+         var str=document.getElementbyId("txtStatus").value;
+        
+ switch(str){
+        case "y":
+        case "Y":
+            document.write("You Choosen Yes");
+            break;
+
+        case "n":
+        case "N":
+            document.write("You Choosen No");
+            break;
+         }
+ }
+      </script>
+<body>
+Enter Y/N:
+      <input type="text" id="txtStatus">
+      <input type="button" value="Continue" onClick="f1()">
+</body>
+              
+
+6) How to manage capitalization for case string?
+Ans =  By converting into another case.
+
+Example:-
+=======
+
+switch(str.toLowerCase())
+case "yes:
+        document.write("You Choose Yes");
+        break;
+case "no":
+        document.write("You Choose No");
+        break;
+default:
+   document.write("Please Choose Yes or No");
+    break;
+}
+
+7) Can case String be a boolean type?
+Ans = Yes, it can be boolean but case must be defined with boolean "true/false" keywords not 0 or 1.
+
+Example:-
+======
+
+<script>
+   function f1(){
+         var x=true;
+      switch(x){
+          case false:
+           document.write("X is true");
+           break;
+}
+}
+f1();
+</script>
+
+8) How you can define case for range of values?
+Ans = 

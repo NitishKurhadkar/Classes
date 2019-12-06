@@ -1,0 +1,42 @@
+if....else
+==========
+
+1-one
+
+2 twto
+
+3-10:between 3 to 10
+
+10-20:between 10 to 20
+
+0-zero
+<0-please eneter 0 to 20
+
+>20-number above 20 
+
+
+Ans =>
+
+   By Passing a boolean"true" into switch and defining  condition at case.
+
+Example=>
+
+  <script>
+      function f1(){
+        var x = 8;
+        switch(true){
+                case(x<=5):
+                  document.write("Number less than 5");
+                  break;
+                  case(x>5)&&(x<=10):
+                  document.write("Number between 5 to 10");
+                  break;
+                  default:
+                  document.write("Number greather than 10");
+                  break;
+
+}
+}
+f1();
+</sript>
+ 

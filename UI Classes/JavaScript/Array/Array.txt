@@ -1,0 +1,83 @@
+Array in javascript can be declared by using
+
+1) Meta Character[]
+
+2)Array Constructor()
+
+Syntax:-
+======
+        var values=[val1,val2...]
+ 
+
+Array metacharacter allows various types of values
+
+Syntax:-
+======
+     var values=[1,"TV",true];
+
+array constructor can also handle various types of values however,it can restricct hte value type while storing values dynamically.
+
+Syntax:-
+    var values=new Array(1,"TV",true);//in JS valid
+    let values=new Array(1,"TV");//not valid in TS[TypeScript]
+
+Assign Values into Array Reference
+
+Syntax:
+     var values=[10,20,30];
+           (or)
+     var values=[];
+     values[0]=10;
+     values[1]=20;
+     values[2]=30;
+  
+
+diagram =
+=======
+ -------------------------------------
+|        |              |            |
+|   10   |        20    |     30     |
+|        |              |            |
+ -------------------------------------
+
+Reading values from an array
+============================
+
+JavaScript array provides a set of function that are used to read values fromm an aaray
+
+Function                       Description
+==================================================================================================================================================================
+
+1) toString()           It reads the values from the give array and returns a String seprated with (,) comma.
+
+2) join()               It is a function used to read values from an array and return by joining the values with user defined seperator i.e. any symbol or special character
+
+3) slice()              It is used to extract values based on specified index values
+
+3) filter()             It is used to extract the vlues from an array by using a condition defined by function
+
+
+Ex:-
+===
+<script>
+ "use strict"
+   function f1(){
+       var productNames=["TV","Mobile",""Watch"];
+       var productPrice=[10000,3400,56000,4100];
+
+document.write("To String="<br>");
+document.write("Join="+producctNames.join(-->")+"<br>");
+
+   document.write("Slice="+productNames.slice(1,3)+"<br>");
+
+   document.write("Filer="+productNames.filter(function(product){
+         return product=="Mobile";
+       })+"<br>");
+         
+  function filterPrice(price){
+         return price<10000;
+  }
+ 
+   document.write(Filter="+productPrice.filter(filterPrice));
+}f1();
+</script>
