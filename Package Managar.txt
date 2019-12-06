@@ -1,0 +1,21 @@
+Package Manger
+=============
+
+Package managaers are software tools used to install various libraries that are required in building web applications some of the package managers are npm
+
+Installing npm
+==============
+
+1) Visit node JS offical website " https://nodejs.org/en/download/
+
+2) Download ".msi" for windows
+
+3) install setup file
+
+4) checkf from command prompt
+
+ C:\> node -v
+ C:\> npm -v
+
+
+

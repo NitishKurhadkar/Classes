@@ -1,0 +1,120 @@
+	CHECK BOX
+
+1) Check box enable the user to check and uncheck any option dynamically
+
+2) it alows the user to select one or multiple option from agroup of choices
+
+3) It is similar in propeerty and attributes when compaired to radio button.
+
+Attributes:-
+
+1) id 
+
+2) Name
+
+3) Class
+
+4)checked 
+
+5)Value
+
+
+Sytax
+
+<input type="checkbox" id="chkMusic" name="chhkMusic value="Music" checked>Music
+
+            DROP DOWN LIST
+
+A drop down list enables the user to select any one option from group of chocies the elements used to configure a drop down list are
+
+
+Element                                      Description
+==========================================================================================================================
+1)<select>                          It defines a drop down list
+
+2)<option>                          It specifies item in dropdown list
+
+3)<optgroup>                        It is used to group options into a category and defined under one label.
+
+
+
+
+Syntax:
+ <select>
+   <optgroup label="groupName">
+        <option>item-1</option>
+        <option>item-2</option>
+   </optgroup>
+ </select>
+
+
+Attributes of <option> element:
+===================================================================================
+
+Attribute         Type          Description
+-----------------------------------------------------------------------------------
+Text             String		Specifies the text to display for option
+
+Value		 String		Specifies the value to submit when option selected
+
+Disabled  	 Boolean	Disable the option so that it con't be sselected
+
+Selected 	 Boolean	Set the option
+
+Example-
+<body>
+	<form>
+		<legend>Select Your City</legend>
+		<select name ="lstCity">
+			<option>Select City</option>
+			<optgroup label="North"></optgroup>
+			<option value="110042">Delhi</option>
+			<option value="400053">Mumbai</option>
+			<option value="500073">Hyd</option>
+			<option selected value="Chennai">Chennai</option>
+		</select>
+	</form>
+	<br>
+		<button>Submit</button>
+</body>
+
+
+
+A list  box has similar attributes like a drrop down lsit but enables  to select  one or multiple option from group of choices.
+
+2) It uses a select element with the attributes 
+  a)Size - Sets height of list box.
+  b)Multiple - Enables multiple selection.
+  
+Syntax -
+<select name="lstCity" size="3" multiple>
+<option value="110042">Delhi</option>
+<option value="500073">Hyd</option>
+</select>
+
+Text Area
+- It is an Rc data elements used to presnt textin multiple line.
+- It allows to leaves, input and edit the text.
+- You can restrictthe modification syntax by defining readonly and disabled attributes.
+
+Attributes
+1) Id
+2) Name
+3) Class
+4) Rows
+5) Cols
+6) ReadOnly
+7) Disable
+
+Syntax:
+Your Comments: <br>
+<textarea rows="4" cls="40">
+</textarea rows"4" cols="40">
+</textarea><br>
+
+Terms of services:<br>
+<textarea rows="4" clos="40" readonly>
+.................Your text............
+
+</textarea>
+
