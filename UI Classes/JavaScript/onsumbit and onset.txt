@@ -1,0 +1,8 @@
+The submit and reset events are defined for <form> elmnent are usedwith the genirie buttons submit and reset
+
+Example:-
+=======
+<form onsubmit ="alert('This will submit form Data')" onreset = "alert(' This will reset the form');>
+Name:<input type="txtName value="text">
+     <input type="txtsubmit" vlue="submit">
+     <input type="txtreset" value="reset">

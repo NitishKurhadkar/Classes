@@ -1,0 +1,52 @@
+Iterator is a software design pattern used to access the elements from a collection in sequential order.
+
+Iterator does't require initialization, condition and counter you can define iterations by using the operators 
+
+a) in  -> reads all properties
+
+b) of -> reads all values
+
+Syntax:-
+       for(var reference in collection)
+         {
+                      //print reference
+         }
+
+
+Ex:-
+==
+
+<script>
+   function f1(){
+                   var cities = ["Delhi","Hyderbad","Chennai"];
+
+
+                   document.write("<b>Looping:</b><br>");
+
+                   for(var i=0;i<cities.length;i++){
+                            document.write(cities[i] + "<br>");
+        }
+ document("<b> iteration</b<br>");
+ for(var city of cities){
+   document(city + "<br>);
+ }
+}
+f1();
+</sccript>
+
+Example:-    for......in operator to read properties.
+=======
+
+<script>
+ function f1(){
+   var product={
+         Name:"Samsung TV", 
+         Price:4500.65,
+         IsInStock:true
+};
+for(var property in product){
+document.write(property + ":" + product[property] + "<br>");
+}
+}
+f1();
+</script>

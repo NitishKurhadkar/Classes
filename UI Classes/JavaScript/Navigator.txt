@@ -1,0 +1,83 @@
+Navigator
+========
+
+It is JavaScript build-in object which provides a set of properties and methods which are used to access the client browser details such as
+
+Property                                 Description
+===========================================================================
+
+appCodeName                             Returns Browser Name
+
+appName                                 Returns browser Family
+
+appVersion                              Returns supported platform
+
+mimeTypes[]                             Returns list of MIME types supported
+
+plugins[]                               Returns list of plugins and their names.
+
+language                                Returns browser language
+
+platform                                Returns OS version and name
+
+onLine                                  Specifies Offline or Online
+
+systemLanguage                          The default window lang.
+
+cookieEnabled                           Returns cookie status.
+==============================================================================
+
+Syntax:-
+======
+      .innerHTML = navigator.language;
+      .innerHTML = navigator.plugins[0].name;
+
+Example:-
+=======
+    GIT - navigator.html
+
+
+It is a browser object used to access the current client browsing history. It includes the following properties and methods:-
+
+Member                           Description
+=======================================================================================
+
+length                           It returns total count of pages in browser history.
+
+back()                           moves to last visited page.
+
+forward()                        moves to next page in browser history
+
+goto()                           moves to any specific pge using page number or name.
+======================================================================================
+
+Example:-
+=======
+
+<script>
+       function bodyload(){
+                    if(history.length>3){
+                           alert("Please Register for More..");
+                           location.href="../register.html";
+                          }
+}
+</script>
+</head>
+<body onload="bodyload()">
+        <h2>You can view Max 3 Pages for free!!</h2>
+</body>
+
+
+It provides set of properties and methods that are used to control the browser window i.e open,close, print etc.
+
+Example:-
+=======
+
+<body>
+   <h2>Windows Object Demo</h2>
+      <button onclick="window.open('../imagews/tv.jpg','TV',width=400 height=300')">Open TV</button>
+
+      <button onclick="window.close()">Close</button>
+
+      <button onclick="window.print()">Print Page</button>
+</body>

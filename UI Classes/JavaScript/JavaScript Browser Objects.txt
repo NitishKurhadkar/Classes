@@ -1,0 +1,29 @@
+JavaScript Browser Objects
+=========================
+
+-location
+-navigator
+-history
+-document
+-window
+
+location - It is a browser object that provides set of properties and methods which are used to access the client loction details they are:-
+
+Member                                Description
+============================================================================
+
+hash				It gets the named location in page.
+
+host                            It gets the server name or IP address.
+
+href                            It gets the complete url.
+
+pathname                        It returns the folder and file name, which is currently accessed by user.
+
+port                            It returns the port number.
+
+protocol                        It returns the protocol name i.e. http, https, filr etc..
+
+search                          It returns the query string.
+
+reload()                        it reloads the current page.

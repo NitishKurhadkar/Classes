@@ -1,0 +1,32 @@
+Array Parameters
+===============
+
+A function can have array parameterswhich can access values from an array type .It requires the actual value to be defined as array.
+
+Example:-
+======
+
+<script>
+   function PrintList(collection)
+        for(var item of collection){
+             document.write(item+"<br>");
+   }
+}
+PrintList("TV","mobile","Shoe"])
+</script>
+
+Rest Parameters
+===============
+
+It is a special parameter type introduced into ES5 to handle multiple values it is defined by using(...) and can access multiple values.
+
+Example:-
+=======
+  <script>
+     function PrintList(...collecction){
+        for(var item of collection){
+      document.write(item+"<br>");
+   }
+   }
+PrintLst("TV","Mobile","Shoes");
+</script>

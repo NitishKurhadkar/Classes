@@ -1,0 +1,51 @@
+
+Arrow Function
+==============
+
+The arrow function are used to define a short hand tecchnique for the functions that you define in call back 
+
+Syntax:-
+=======
+
+()=>{}
+
+
+() - function
+
+=> - return
+{} - statements
+
+Example:-
+=======
+
+  <script>
+         var products = [{Name:"TV";category:"Electronics"},
+			 {Name:"Mobile";category:"Electronics"},
+                         {Name:"Puma Shoes";category:"Shoes"},
+                         {Name:"Nike Shoes";category:"Shoes"}];
+  var prods = product.filter(x.x.category=="Shoes");
+       for(var i = 0;i<pods.length;i++){
+        document.write(prods[i].name+"<br>");
+}
+</script>
+
+
+Naming Arrow Functions
+======================
+
+Yoou can define a name as a reference for arrow function so that they can be accessive by using reference.
+
+Syntax:-
+======
+
+var name = (param) => "return value";
+name(param);
+
+Example:-
+=======
+<script>
+ var hello = ()=>"Welcome";
+ var add = (a,b)=>a+b;
+ documnt.write(hello()+"<br>");
+ document.write(add(10,20));
+</script>

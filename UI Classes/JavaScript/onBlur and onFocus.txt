@@ -1,0 +1,28 @@
+These are the events used to defined action when any element gets focused and looses the focus.
+
+Example:-
+=======
+
+<script>
+   function ShowTip(){
+           document.getElementById("msg").innerHTML="Name in Block Letters";
+         }
+   function HideTip(){
+          document.getElementById("msg").innerHTML="";
+      car name = document.getElementById("txtName").innerHTML="";
+    var uname=document.getElementById("txtName").value;
+
+     if(uname==""){
+                  document.getElementbyId("msg").innerHTML="Name Required";
+ }
+       else{
+          document.getElementById("txtName").value=unmae.toUpperCase();
+}
+}
+</script>
+<body>
+  You Name:
+      <input onblur="HideTip()"onfocus="ShowTip()" type="text" plachloder="Block Letters" id="txtName">
+  <span id="msg"></span>
+</body>
+            

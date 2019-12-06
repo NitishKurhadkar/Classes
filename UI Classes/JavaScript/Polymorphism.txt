@@ -1,0 +1,133 @@
+Polymorphism
+============
+1)It is one of the key feature of Object  Oriented Programming(OOP).
+
+2)The term Poly means many and morphose means "Forms".
+
+3)Polymorphism is a technique of allocating different types of memory to a single object so that it can have different bahaviours at various states.
+
+4)Technically Polymorphism is a single base class object using the memory of multiple derived classes.
+
+Example:-
+  <script>
+    class Employee{
+        FirstName="Raj";
+        LastName="Kumar";
+        Print(){
+                document.write(this.FirstName+""+this.LastName+"<br>");
+}
+}
+class PartTimeEmployee extends Employee
+{
+FirstName="Kiran";
+LastName="Rao";
+Print(){
+     document.write(this.FirstName+""+this.LastName+"-Part Time<br>");
+}
+}
+class FullTimeEmployee extends Employee
+{
+     FirstName="Tom";
+     LastName="Hanks";
+     Print(){
+          document.write(this.FirstName+""+this.LastName+"-FukkTime<br>");
+       }
+}
+function f1(){
+   var employees = new Array();
+   employees[0] = new Employee();
+   employees[1] = new PartTimeEmployee();
+   employees[2] = new FullTimeEmployee();
+   for(var i=0;i<employees.length;i++){
+          employees[i].print();
+}
+}
+f1();
+</script>
+
+JavaScript Funcions:-
+====================
+1) A function defines action to be performed by an object 
+2) Function can be parameterless or parameterized.
+3) A function encapsulates a set of logic that can be accessed when executed any number of times.
+
+
+Syntax:-
+=======
+  function Name(){
+          //logic
+}
+Name();
+
+
+Anonymous Funnction:-
+===================
+
+An Anonymous function is a special type of function on JavScript that doesn't contain reference name it is mostly used in call back mechanism you can manually invoke any anonymous function by using "()".
+
+Example:-
+======
+<script>
+(function(){
+   document.write("Welcome to JavaScript");
+})();
+</script>
+
+Parameterized Function:
+======================
+
+1) A function can be defined with  parameters.c
+
+2) The parameters are used to modify thee functionality.
+
+3) The parameters that are passed into function signature are known as formal parameters and the parameters that are passed in function calling are knows as actual parameters
+                                                                                                                               ================
+
+Example:-
+======                            
+<script>            |-------------->(formal Parameter)
+   function Hello(uname){
+        document.write("Hello !" + uname);
+}
+Hello("John");
+          |---------------->(Actual Parameter)
+</script>
+
+
+
+
+Note:- Every paremeter defined in a method is mendatory that is you must pass value into the parameter if value is not defined that it will return undefined.
+
+
+Example:-
+=======
+
+ function Hello(uname){
+          if(uname==undefined){
+           document.write("Hello !");
+      }
+        else{
+                document.write("Hello !"+uname);
+}
+}
+Hello("John");
+HEllo();
+</script>
+
+
+Multiple parameters
+===================
+
+Example:-
+=======
+
+<script>
+   function Details(id,name,price){
+          document.write("Id="+id+"<br>"+"Name ="+name+"<br>"+ "Price = "+price+"<br>");
+}
+Details(1,"Sansung TV",45000);
+document.write("<hr>);
+Details(2,"Nike Shoes",2000);
+</script>
+}
+

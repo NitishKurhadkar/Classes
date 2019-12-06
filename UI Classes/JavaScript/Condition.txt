@@ -1,0 +1,141 @@
+Simple Condition (If...Else Cluase)
+===================================
+   It is program technique used to execute the given set of statement than specified condition evaluates to true and another set of statement if it evaluates to false
+
+Syntax:- If(condition)
+            {
+                  statement if true;
+            }
+         else
+          {
+                 statement if false
+           }
+
+Ex:-
+====
+<head>
+    <!-- link Bootstrap,css-->
+     <script>
+        var userDetails={
+                 UserName:"john123"
+         };
+          function VerifyUser(){
+              var userName= document.getElementById("txtName").value;
+                         var password= document.getElementById("txtPwd").value;
+               if(userName==userDetailss.UserName&& password==userDetails.Password){
+                               l,ocation href="Succrss.html";
+                        }
+                 else{
+             document.getElementById("error").style.display="block";
+             document.getElementById("frm").style.opacity="0.3";
+            }
+            }
+         functtion CloseClick(){
+                      document.getElementById("error").style.display="none";
+                   document.getElementById("frm").style.opacity="1.0";
+                }
+</script>
+</head>
+<body>
+  <div class="container">
+         <form id="frm">
+              <h2 class="form-text">User Login</h2>
+     <div class="form-group>
+       <label> User Name</label>
+   <div>
+        <input type="text" id="txtName" class="form-control">
+    </div>
+        </div>
+   <div class="form-group">
+       <label type="password" id="txtPwd" class="form-control">
+       </div>
+</div>
+<div class="form-group">
+    <input onclick="VerifyUser()" type="button" value="Login" class="btn btn-primary btn-block">
+ </div>
+</form>
+<div style="display:none; margin-top:-150px; position:fixed" id="error" class="alert alert-danger">
+      <h2 class="alert-heading">Invalid User Name/Passeord</h2>
+        <p class="text-danger">Please verify tour user name and password.</p>
+         <input type="button" value="X" class="btn btn-danger" onclick="CloseClick()">
+</div>
+</body>
+
+       
+Multiple COndition
+==================
+
+ It is required when you want to provide multiple alternatives for a specific task
+It uses multiple decisions defined with else if'
+
+Syntax:
+=======
+
+if(condition)
+       {
+             statement if condition-1 true;
+       }
+else(condition 2){
+       statement if condition-2 true;
+}
+else{        
+    statement if all condition flsse;
+}
+
+Example:-
+=======
+
+<!-- link Bootstrap-->
+ <script>
+    var userDetails={
+       Name:"John",
+       OTP:4506070; 
+}
+
+function verify(){
+      var pin=document.getElementById("txtPin").value;
+    if(pin==userDetails.PIN){
+        document.write("Verified Successfully using PIN");}
+else if{
+alert("Please Enter Valid Pin or OTP");
+}
+else{
+  alrt("Please Enter Valid PIN or OTP");
+}
+}
+</script>
+</head>
+<body>
+  <div classs="container">
+ <fieldset>
+     <legend>Verify Pin</legend>
+ <div class="form-inline form-row">
+    <input type="text" id="txtPin" class="form-control" placeholder="You can use OTP/Pin">
+  <input type="button" calue="Verify" class="btn btn-primary" onclick="Verify()"> 
+</div>
+</fieldset>
+<//div>
+</body>  
+
+Multi-level condition
+=====================
+
+    In this approach conditions are verified one after another. It will proceed to next condition onlye hwn the given conditon is true.
+
+Syntax:-
+======
+
+ if(condition1){
+    if(Condition2){
+          if(condition3){
+         statement if condition3 true;
+            }
+        else{
+           statement if condition3 false;
+ }
+}
+else{
+     statement if condition2 false;
+}else{
+  statement if condition1 false;
+}

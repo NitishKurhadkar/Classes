@@ -1,0 +1,51 @@
+Mouse Down and Up
+================
+<head>
+<script>
+  function ZoomIn(){
+         var pic = document.getElementById("pic");
+         pic.width = 200px;
+         pic.height = "200px;
+        }
+
+  function Zoomout(){
+               var pic = document.geetElementById("pic");
+               pic.height = 50px;
+               pic.width = 50px;
+             }
+</script>
+</head>
+<body>
+   <div align=center>
+            <img id="pic" onmousedown = "ZoomIn()" onmouseup="ZoomOut()" width = "50" height = "50" src="..?images/tv.jpg>
+            <p> Press hold down on Image to View Large</p>
+</div>
+</body>
+
+Key Events
+==========
+
+
+Event                                              Descripton
+===============================================================
+
+onkeyup                            Specifies actions to perform when key is released.
+
+onkeydown                          Specifies actions when user hold down key.
+
+onkeypress                         Specifies actions when key is pressed .i.e another key used after current.
+
+
+
+Property                            Description
+==================================================================
+
+Keycode                        It returns the actual key code.
+
+charCode                       It returns the char code as per UTF standards
+
+which                          it is similar to keycode, used for various keybord layouts.
+
+shiftKey ]
+ctrlKey  ]                      Returns true/false when used
+altKey   }

@@ -1,0 +1,55 @@
+Slide Show of Images
+====================
+
+
+<head>
+  <script>
+      vat pics=[{Title:"Angry Birds",Poster:"Pics/1.jpg"},{Title:"Train Your Dragon",Poster:"Pics/2.jpg"|,
+                      .........................];
+              function SlideShow(index){
+              document.getElementById("title").innerHTML = pics[index].Title;
+                             documnet.getElementById("poster").src=pics[index].Poster;
+                }
+                        function bodylod(){
+                                 SlideShow(0);
+                          }
+                 var count=0;
+                 function StartShow(){
+                         count++;
+                SlideShow(count);
+                     }
+                  function PlayClick(){
+                          window.startshow = setInterval(StartShow,5000);
+                        document.getElementById("status").innerHTML = "(Playing)";
+          }
+                     function PauseClick(){
+             clearInterval(startshow);
+                 document.getElementById("status").innerHTML = "(Paused)";
+             }
+   </script>
+     <link - bootstrap.css>
+ <style>
+     img{ 
+      width:500px; 
+      height:200px;
+          }
+</style>
+</head>
+<body onload="bodyload()">
+ <div class="container">
+  <div class="card">
+   <div class="card-header text-center">
+     <h3 id="title"></h3>
+     <div id="status"></div>
+ </div>
+<div class="card-body">
+ <img id="poster" class="img-thumbnail">
+ </div>
+<div class="card-footer text-center">
+  <button onclick="PlayClick()" class="btn btn-outline-primary"><font face="webdings">4</font></button>
+   <button onclick="PauseClick()" class="btn btn-outline-primary"><font face="webdings">;</font></button>
+</div>
+</div>
+</div>
+</body> 
+  

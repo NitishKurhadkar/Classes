@@ -1,0 +1,38 @@
+Function with return type
+========================
+
+1) A Function usually cannot return any value .
+2) You can define a function to return a value by using the jump statement return
+3) A Function can be defined with a return type as number,string, boolean etc.
+
+Example:-
+=======
+
+<script>
+   function Add(a,b){
+      return a+b;
+}
+function heading(str){
+   return<h2>${str}</h2>; 
+}
+document.write(heading("Addition"));
+document.write(Add(30,20));
+</script>
+
+
+Function Recursion
+==================
+
+It is a technique of calling a function within the same scope with batch opertaion ie. same set of statement executes repidately until the specified condition matches.
+
+Example:-
+=======
+Function fact(number){
+      if(number<=0){
+    return 1;
+}else{ 
+   return number*(factnumber-1)
+}
+}
+document.getElementById(fact(10));
+

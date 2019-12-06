@@ -1,0 +1,77 @@
+Miscelaneous Evenets
+====================
+
+Event                                                  Description
+=================================================================================================
+
+oncut                                        actions when contebt is remove and keep on clipboard.
+
+oncopy                                       actions when content copied
+
+onpaste                                      actions when content pasted
+
+onselectstart                                actions while selecting the content 
+
+oncontextmenu                                actions when user right click
+
+onselect                                     actions when selection completed.
+
+Note:To disable any event : use "return fasle".
+
+
+Example:-
+=======
+
+<script>
+    function Cut(){
+     window.msg=document.getElementById("msg");
+     msg.innerHTML="Removed - Coped to Clipboard";
+}
+function Copy(){
+          msg.innerHtmL="Copied to Clipboard";
+}
+function Paste(){
+      msg.innerHTML="Inserted from Clipboard";
+}
+</script>
+<style>
+.container{
+          width:400px;
+          height:200px;
+          overflow:scroll;
+}
+</style>
+<body onselect="return false" onselectstart="return false">
+   Your Comments:<br>
+     <textarea oncut="Cut()" oncopy="Copy()" onpase="Paste()" rows="4" cols="30">
+ </textarea>
+<br>
+<div id-"msg"></div>
+<br>
+<div oncut="return false" onselectstart="return false" oncontextmenu="return false" class="container">
+          sample paragraph....
+</div>
+</body> 
+
+ondblclick:It Specifies actions to perform when user double clicks on any elements
+
+Example:-
+=======
+
+<script>
+  function Zoom(){
+  window.open("../images/tv.jpg",TV,"width=500 height=400");
+}
+</script>
+img{
+  width:100px;
+  height:100px;
+}
+</style>
+<body>
+  <div align="center">
+  <img id="pic" src="../Images/y=tv.jpg" on dblclick="Zoom()">
+<br>
+Double Click to Open
+</div>
+</body>

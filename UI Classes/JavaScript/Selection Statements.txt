@@ -1,0 +1,226 @@
+The Selection Statements are decision making statements used to control the execution flow. THe keywords used for decision making are
+1) If 
+2) Switch
+3) Case
+
+if...else clause:
+================
+
+ It is a decision making statement that executes the given set of statement based on the value returned by boolean expression it is again configured into following types
+1) Forward jump 
+2) Simmple condition
+3) Multiple conditions
+4) multi level conditions
+
+
+Diagram-
+=======
+             
+
+              |
+              V
+           /
+           COndition
+            
+                 | 
+                 |
+                 |
+ if condition is |                    if condition is false 
+true             |
+                 |
+                 V
+            Condition code
+
+
+
+Forward Jump
+============
+
+It is decision making approach where program will continue only when the given condition evaluates to true it will no have any alternative process.
+
+Syntax:-
+======
+    if(condition/boolean Expression)
+           {          
+                      statements if true;
+           }
+
+
+Example:-
+========
+    <!Doctype html>
+    <html>
+    <head>
+        <!- link bootstrap -->
+           <style>
+
+                input[type="button"]:disabled{
+                         background-color:grey;            
+       }
+ </style>
+   <script>
+           function VerifyPin(){
+          var pin= document.getElementById("txtPin").value;
+            if(pin==3344){
+            document.getElementById("btnVerify").disabled=false;
+         }
+}
+ </script>
+ </headd>
+</body>
+     <div class=container">
+    Enter Pin:
+    <div class="form-inline">
+        <input type="text" sizze="4" id="txtPin" onkeyup="VerifyPin()" class="form-control">
+              <input type="button" id="btnVerify" disabled vlue="Verify" class="btn btn-primary">
+ </div>
+</div>
+ </body>
+</html>
+
+
+Switch Selection Statement
+=========================
+
+1) A Switch in electronics is used to control the execution flow of electronics and interrupt yhe flow of electronics.
+2) A selector Switch is respnosible for executing only the set of statements that are required for the specific condition.     
+3) The Selection Switch is designed by using Switch, case and Break keyword.
+
+ -----
+|Start|
+ -----
+    /         \
+   /           \
+  /  expression \
+  \             /
+   \           /
+    \         /         
+      | | |
+      | | |               -----------
+      | | |--------------|code block1|
+      | |                 -----------
+      | |                 
+      | |                  -----------
+      | |-----------------|code block1|
+      |                    -----------
+      |                  
+      |                    ------------
+      |-------------------|code block1|  
+                           -----------
+                         
+
+
+
+                          code block n 
+
+
+
+Syntax:-
+======
+
+switch(expression)
+{
+case constant-expression:
+       statement
+       jump-statement
+
+[default:
+      statement
+      jump-statement]
+ }
+
+
+Example:-
+=======
+
+<script>
+  function f1(){
+       var number=3;
+       switch(number){
+        case1:
+            document.write("One");
+             break;
+        case2:
+           document.write("Two")
+           break;
+        case3:
+           document.write("THree")
+           break;
+           default:
+           document.write("Please Enter Vallue between 1 to 3");
+}
+}
+f1();
+</script>
+
+
+Looping Control and Iteraion Statement
+======================================
+
+Looping is the process  of executing a set of statements rapitedly until the given condition is satisfied.
+
+JavaScript loops can be created by using for while and do while.
+
+for loop
+=======
+
+It is a looping control statement which is used when you know the exact no of statements and we are sure that the iteration counter wil not change dynamically.
+
+                           
+ 	    ----                                
+           |Init|
+ 	    ----
+              |
+              |
+              |
+         /        \
+	/condition \
+        \          /
+         \        /
+              |
+              |
+              |	
+         ----------
+	|code block|
+ 	----------
+              |
+              |
+              |
+	 ---------
+	|Increment|
+	-----------
+
+Example:-
+=======
+ <script>
+        function f1(){
+              var names = ["TV", "Mobile"]
+              for(vari=0;i<names.length;i++){
+                    document.write(names[i]+"<br>");
+            }
+}
+f1();
+</script>
+
+
+Loop Decrement
+==============
+
+Syntax:-
+======
+
+for(i=10;i>0;i++){
+   document.write(i+"<br>");
+}
+
+Loop Step Value:
+===============
+
+   for(var i=0; i<=10;i=i+2){
+         document.write(i+"<br>");
+}
+
+Loop Termination:
+================
+
+
