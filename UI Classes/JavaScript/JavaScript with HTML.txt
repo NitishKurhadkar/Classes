@@ -1,0 +1,96 @@
+
+JavaScript with HTML
+====================
+
+1) HTML present a static DOM(Document Object Model)
+
+2) JavaScript is used to manupulate the DOM
+
+3) HTML uses JavaScript for client side validation and interaction.
+
+
+Intergrating JavaScript into HTML Document
+==========================================
+
+JavaScript functions are required in a HTML document to manupulate DOM you can intergrate JavaScript functions in three ways:-
+
+1) Inline 
+
+2) Embeded
+
+3) External File
+
+1) Inline:- 
+=========
+
+In this method the JavaScript functions are defined within element by using any event this functions are not accessible to other elements.
+
+Example:-
+========
+
+<body>
+  <h2>Click Print Button</h2>
+    <button onclick="window.print()">
+    Print Page
+ </button>
+</body>
+
+Embeded:-
+=======
+
+In this method the Javascript function are defined in a page within script element so that they are accessible to any element in the page.
+
+1) The Embeded scripts ccan be defined in head or body section
+
+2) Script in head section is recommended when user wants to executes manually i.e on call back.
+
+3) Scripts in body section are recommended when the user wants to execute on page request noton call back.
+
+
+Syntax:-
+=======
+  <head>
+    <script type="text/javscript">
+     </script>       
+         (or)
+    <script language="javascript">
+    </script>
+
+Strict mode of javascript:-
+=========================
+
+1) JavaScript have browser compatibility issues hence it is recommended to turn on the strict mode so that javascript can be used by developer when the basic standards which are compatible across browsers
+
+2) You can turn on the strict mode by using "use strict"
+
+Ex-
+==
+  <script>
+     function f1(){
+          x=10;       //valid
+        document.write("x="+x);
+       }
+       f1();
+      </script>
+
+      <script>
+         "use strict";
+          function f1(){
+            x=10;       //invalid-must declare
+             document.write("x="+x);
+         }
+        f1();
+      </script>
+
+JavaScript for legacy(old) browser
+==================================
+  You can target the javascript function to run on old version browser by enclosing in HTML comments.
+
+Ex:-
+===
+ <script type="text/javascript">
+      <!-- 
+             function Printpage(){
+                     window.print();
+                   } -->
+  </script>

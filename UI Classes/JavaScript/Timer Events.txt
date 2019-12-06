@@ -1,0 +1,85 @@
+Timer Events
+============
+
+JavaScript provides a set of timer function that are used to perform scheduled task.The timer Events are:-
+
+Scheduled Task
+==============
+
+1) setInterval()
+
+2) clearInterval()
+
+3) setTimeout()
+
+4) clearTimeot()
+
+These are the timer fuction used in JavaScript to load any task into mermory and execute the task after specific duration of time.
+
+The clear function is used to remove the task from the memory.
+
+Syntax:-
+======
+
+setinterval(function, TimeInterval);
+
+Example:-
+=======
+<script>
+  function msg1(){
+     document.getElementById("msg").innerHTML="Hello!";
+}
+function msg2(){
+    doccument.getElementById("msg").innerHTML="How are yoy?";
+}
+function msg3(){
+     document.getElementById("msg").innerHTML="Welcome to JavaScript";
+}
+function Show(){
+   window.m1 = setInterval(msg1,2000);
+   window.m2 = setInterval(msg2,4000);
+   window.m3 = setInterval(msg3,6000);
+}
+function Hide(){
+   clearInterval(m2);
+}
+</script>
+<body>
+  <h2 align="center" id="msg"></h2>
+  <input type="button" value="Show Messages" onclick="Show()">
+     <input type="button" vlue="Stop Msg2" onclick="Hide()">
+</body>
+
+
+The timeout function are similar to interval but will execute the given task only once where as interval will repeat the task.
+
+Synatx:-
+======
+setTimeout(function,Timeinterval) 
+
+Example:-
+=======
+
+  function msg1(){
+     document.getElementById("msg").innerHTML="Hello!";
+}
+function msg2(){
+    doccument.getElementById("msg").innerHTML="How are yoy?";
+}
+function msg3(){
+     document.getElementById("msg").innerHTML="Welcome to JavaScript";
+}
+function Show(){
+   window.m1 = setTimeout(msg1,2000);
+   window.m2 = setTimeout(msg2,4000);
+   window.m3 = setTimeout(msg3,6000);
+}
+function Hide(){
+   clearInterval(m2);
+}
+</script>
+<body>
+  <h2 align="center" id="msg"></h2>
+  <input type="button" value="Show Messages" onclick="Show()">
+     <input type="button" vlue="Stop Msg2" onclick="Hide()">
+</body>

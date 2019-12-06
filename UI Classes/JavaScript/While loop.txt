@@ -1,0 +1,83 @@
+While Loop
+=========
+
+It is a looping ontrol statement used when the exact number of iterations are not known and the iteration counter may change dynamicaly.
+
+The while loop initially checks for the possible condition and starts executing on when condition evaluats to true.
+
+
+
+
+Block Diagram:-
+=============
+
+
+                   |
+                   |
+                   |
+                   |
+                   V
+
+              Condition
+
+
+
+           ----------
+          |code block|  
+           ---------
+     
+
+Syntax:-
+======
+
+   var x=1;
+   while(x<=10)
+    {
+            document.write(x+"<br>");
+            x++;
+     }
+
+The do while statement
+======================
+
+It is similar to the while loop but ensures that the statement will executes at least once   even when the condition evaluates to false
+
+
+
+
+Block Diagram:-
+=============
+
+                   |    do{
+                   |              conditional code;
+                   |         }while(condition)
+                   |
+                   V
+
+    --------->code Block
+    |
+    |   if condition
+    |   is true
+    |
+    |
+    |-----condition
+
+
+
+
+<script>
+      function f1(){
+        var x=11;
+      do{
+         if(x>10)
+             {
+          document.write("Con't loop);
+       }
+        else{
+         doument.write(x+"<br>");
+         x++;
+          }
+        }while(x<=10)
+}
+f1();
+</script>

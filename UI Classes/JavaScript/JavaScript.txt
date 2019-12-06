@@ -1,0 +1,26 @@
+Javascript
+==========
+
+1) Javascript is a lightweight interpreted or just-in-time compiled programming language, which supports object oriented, imperative and functional programming.
+
+2) JavaScript is used in various technologies like  in :
+	HTML    -> foee client Side
+	NodeJS  -> forserver side
+	MangoDB -> for database
+	Flash   -> for Animations
+
+Evolution of Scripting Languages
+================================
+
+1) ECMA script is ht first scripting language.
+
+2) "Brendan Eich" Developed "Mocha" as script for netscape browser later renamed as livescript.
+
+3) Sun-microsystems took responsisbility of maintaining livescript and renamed as javascript.
+
+4) Javscript has browsercompatitbility issue as every browser extendss its own javascript features.
+
+5) JQuery is a library used toreduce browser compatibity issue implicitly.
+
+^) AngularJS, KnockoutJS, BackBoneJS are frameworks which can control the application flow.
+

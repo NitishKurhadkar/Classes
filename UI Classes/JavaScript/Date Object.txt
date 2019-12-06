@@ -1,0 +1,51 @@
+Date Object 
+===========
+1) JavaScript provides a date object used to handle the date values.
+2) It allocates the memory dynamically to store the current date or any specfic date.
+3) The date stored in a memory is in a Date format
+
+Syntax:-
+======
+
+ var mfd = new Date("2019/11/12");
+ var
+
+The date values are returned by using tht following date function
+
+Function                                 Description
+====================================================
+
+1) getHours()                           Return hour number in 24 hr format
+                                        ex - 13 - 4 pm
+
+2) getMinutes()                         Returns minutes number
+
+3) getSeconnd()                         Returns secondss number
+
+4) getDay()                             Returns week day number
+                                        0 = Sunday
+
+5) getDate()                           Returns the current date number.
+
+6) getMonth()                          Returns the current month number 0=January
+
+7) getYear()                           Returns the year number as per Y2K 2019 as 119
+
+8) getFullYear                         Returns ful year number 2019
+
+9) toLocateDateString()                Returns short date format.
+
+10)toLocateTimeString()                Return short time format
+
+Ex:-
+===
+
+  <script>
+        function f1(){
+             var weekdays=["Sun","Mon","Tue","Wed"];
+             var Months=["Jan","Feb","mar","April"];
+             var mf = new Date("2010/02/20");
+              document.write("Day="+mfd.getMonths[mfd.getMonth()]+"<br>"+"Week Day="+weekdays[mfd.getDay()]+"<br>"+"year="+mfd.getFullYear());
+                 }
+ f1();
+</script>

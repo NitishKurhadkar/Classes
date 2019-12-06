@@ -1,0 +1,124 @@
+Boolean Type
+============
+
+1) The Boolean types are used in progrmming to control the execution flow.
+
+2) Boolean types are used for decision making in program it can contain the value true or false.
+
+3) JavaScript Boolean type will return numeric 1 for true and 0 for false.
+
+4) A Boolean value always return the keywords true or false
+
+ex:-
+ <script>
+   function f1(){
+      var name="Samsung TV";
+      var price=34000.55;
+      var isInStock=false;
+      var isInStock=(isInStock==true)?"Available":"Out of Stock";
+      document.write("Name="+name+"<br>"+"Price="+price+"<br>"+"Stock Status="+stockStatus);
+
+  }
+  f1();
+  </script>
+
+null empty ...
+
+undefined
+
+Null Type
+=========
+
+1) Null isa reference error returned when a reference not found dynamically during runtime.
+
+2) Null type in JavaScrit returns null keyword if specific reference not found.
+
+3) If the reference is not available statically then it returns the error not defined 
+
+ex:-
+===
+  <script>
+      function f1(){
+          var uname=prompt("Enter Name");
+          if(uname=null)
+           {
+              document.write("uname not available");
+           }
+          else{
+               document.write("Hello!+uname);
+           }
+          }
+         f1();
+   </script>
+
+Undefined Value
+===============
+
+1) JavaScript variable references are implicintly type i.e data type is determined according to the value assign.
+
+2)  If the value is  not specified then JavaScript returns the type as undefined.
+
+3) You can verify the keyword by using the keyword undefined
+
+ex:-
+===
+ <script>
+      function f1(){
+         var price=3000;
+         if(price=undefined)
+             {
+          document.write("Please Provide value for Price");
+          }
+             else{
+                    document.write("Price="+price);
+           }
+       }
+      f1();
+    </script>       
+
+Date Type                                       Description
+================================================================================================
+
+1) String                                        Represents sequence of characters e.g. "helo"
+
+2) Number                                        Represents numeri value e.g.100
+
+3) Boolean                                       Represnts boolean value eitheer false or true
+
+4) Undefined                                     Represents undefined value
+
+5) Null                                          Represents null i.e no reference at all
+
+Reference Types
+===============
+
+1) Reference types are stored in memory heap.
+
+2) The Values stored in memory heap doesn't have any fixed range.
+
+3) The size of values will vary according to available memory.
+
+4) They are stored under the reference of main memory and accesive by the reference hence, they are also known as referance types.
+
+5) The JavaScript reference types are:-
+
+a) Array
+
+b) Object 
+
+c) Regular Expression
+
+Array
+=====
+
+1) Arrays in computer programming are used to reduce overhead and complexity.
+
+2) Arrays can reduce overhead by storing values in sequential order.
+
+3) Arrays can reduce complexity by storing multiple values under one reference name.
+
+4) JavaScript arrays can store any type of value i.e. a sequence of various values.
+
+5) They array size can be changed dynamically.
+
+6) JavaScript array can have the behaviour of Stack, Queue, Had=shTable, Enummeration etc.

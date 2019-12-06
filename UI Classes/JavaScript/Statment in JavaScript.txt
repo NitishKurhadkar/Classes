@@ -1,0 +1,10 @@
+   Statment in JavaScript
+   ======================
+
+1) Statement is an program instruction used to control the execution flow it is used by using keywordss, operator, variable, expression
+2) The JavaScript statment are classified into following types 
+
+a) Selection Statements id, else, switch, case
+b) Iteration & looping Statements for, while, do while
+c) Jump Statements break, continue, return
+d) Exception Handeling Statements try, catch, throw, finally

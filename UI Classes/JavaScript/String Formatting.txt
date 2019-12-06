@@ -1,0 +1,151 @@
+String Formatting
+=================
+
+JavaScript provides a set of function that are used to format the given string dynamically they are:-
+
+Method Name                        Example
+========================================================================================
+
+1) big                          sets font size to large 
+
+2) blink                        Blinks the given text(not supported on every browser)
+
+3) bold()                       Set Bold<b>
+
+4) fixed()                      sets Normal Font Size
+
+5) fontcolor('green')           sets a font color
+
+6) fontsize('4')                sets a font size
+
+7) italics()                    Applies<i> emphasize
+
+8) small()
+
+9) strike()                     Sets<strike>effect
+
+10) sub()                       Sets suscript<sub>
+
+11) sup()                       Sets subscript<sup>
+
+12) toLowerCase()               Converts all lettes to Lower case
+
+13) toUpperCase()               Converts to Upper Case
+
+Ex:-
+===
+  <head>
+       <script>
+          function ChangeCase(){
+               var uname= document.getElementById("txtname").value;
+               document.getElementById("txtName").value=uname.toUpperCase();
+              }
+       </script>
+      </head>
+      <body>
+        Name:<input type="text" placeholder="Name in Block Letters" id="txtName" onblur="ChangeCase()">
+      </body>
+
+Syntax:-
+======
+   var str="Welcome To JS";
+   document.write(str.fontcolor('green').fontsize(2).toUpperCase());
+
+String Mnipulation
+=================
+
+CharAt()
+indesOf()
+lastIndexOf()
+substring()
+length
+
+
+JavaScript provides set of function that are used to manupulate the given string dynamically it includes the following:-
+
+Method                         Description
+======================================================================================
+
+1) length                     It return the total count of characters in given String.
+
+2) charAt()                   It returns the character at specified index.
+                           
+                              ex:- str.charAt(0)
+
+3) indexOf()                  It returns the index number of speccified character.
+                             
+                              ex:- str.indexOf("e")
+
+4) lastIndexOf()              It returns the last occurance index number of specified character.
+                             
+                              ex:- str.lastIndexOf("e")
+
+5) substring()                It returns chars between the given index.
+
+                              ex:- str.substring(0,5)
+                                   str.substring(5)
+
+Ex:- <head>
+         <script>
+             function PrintValue(){
+                    var str= document.getElementById("txtMsg").value;
+                    var firstChar=str.charAt(0);
+                    var restChars=str.substring(1);
+                    var sentence= firstChar.toUpperCsse().fontsize(3).bold().fontcolor('green')+restChars.toLowerCase();
+
+                       
+                 }
+            </script>
+            </head>
+            <body>
+            Your Message: <input type="text" id="txtMsg" onblur="PrintValue()">
+           <br>
+           <div id="lbl"></div>
+          </body>
+
+function PrintValue(){
+  var str= documentElementById("txtMsg").value;
+  var firsthalf=str.indexof("@");
+  var secondhalf=str.lastindexof("@");  
+ }
+
+Ex-
+  
+<html>
+    <head>
+        <script>
+function PrintValue(){
+    var email= documentElementById("txtEmail").value;
+    var atPos=str.indexof("@");
+    var id= email.substring(0,atPos);
+    var domain = email.substring(Pos + 1) ;
+    document.getElementById("lbl").innerHTML="EmailId = "+Id+<br>+"Domain="+domain;
+   }
+</script>
+</head>
+<body>
+    Your Email: <input type="text" id="txtEmail" onblur="PrintValue()">
+    <br>
+    <div id="lbl"></div>
+    </body>
+</html>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

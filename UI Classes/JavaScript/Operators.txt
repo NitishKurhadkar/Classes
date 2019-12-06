@@ -1,0 +1,214 @@
+Bitwise Operators
+=================
+
+
+Operator                           Description                            Example
+======================================================================================
+&                                  Bitwise AND                         (10==20 & 20==33)=false
+
+|                                  Bitwise OR                          (10==20 | 20==33) = false
+
+^                                  Bitwise XOR                         (10==20^ 20==33)=false
+
+~                                  Bitwise NOT                         (~10) = -11
+
+<<                                 Bitwise Left Shift                  (10<<2)=40
+
+>>                                 Bitwise Right Shift                 (10>>2)==2
+
+<<<                                Bitwise Right Shift with zero       (10>>>2)==2
+
+Logical Operators
+=================
+
+Operator                              Description                          Example
+===================================================================================
+
+&&                                    Logical AND                           (10==20 && 20==33)=false
+
+||                                    Logical OR                            (10==20 || 20==33)=false
+
+!                                     Logical NOT                           !(10==20)=true
+
+
+Assignment Operators
+======================
+
+
+Operator                              Description                          Example
+===================================================================================
+
+=                                   Assign                                 10+10=20
+
++=                                  Add and Assign                         var a=10;a+=20;
+                                                                           now a =30
+
+-=                                  Subtract and Assign                    var a = 20; a-=10;
+                                                                           now a = 10
+
+*=                                  Multiply and assign                    var a=10; a*=20;
+                                                                           no2 a =200
+
+/=                                  Divide and assign                      var a=10; a/=2; now a=5
+
+%=                                  Mofules and Assign                     var a=10; a%=5; now a =0
+
+
+
+Special Operators
+==================      
+
+Ternary operator 
+================
+It is a special operator that can build by using three operands it is a decision making operator that executes single statements based on given condition.
+
+Syntax:- (Condition)?statement if true:statement if false
+
+Example
+=======
+
+<head>
+   <script>
+         function VerifyCvv()
+             var cvv= document.getElementByID("txtCvv").value;
+             document.write((cvv==334)?'Verified<br> Transaction Completed':'Invalid CVV');
+        }
+   </script>
+</head>
+<body>
+   CVV:<input type="text" id="txtCvv"">
+        <input type="button" value="submit" onclick="VerifyCvv()">
+ </body>
+</html>
+
+Delete Operator 
+===============
+
+It is a special operotor used to delete any object you cannot delete the properties of JavaScript build in objects.
+
+Syntax:-
+======
+
+   delete  objectName.Property;
+
+Ex:-
+===
+  <script>
+     function f1(){
+                   var product={
+                       Name:"Samsung TV", 
+                       Price: 4500.53
+                  };
+      delete product.Price;
+      document.write((product.Price==undefined)?('Name='+product.Name):('Name='+product.Name+'<br>'+'Price='+product.Price));
+            }
+        f1();
+       </script>
+
+in operator
+===========
+
+  It is a special operator which is used to verify whether the given property is given to the specified objects it returns boolean true if available.
+
+Syntax
+======
+ 
+    'Property' in Object Name;
+
+Ex:
+===
+   <script> 
+        function f1(){
+                Name:"Samsung TV", Price:45000.53
+                   };
+           document.write('Price' in product);
+     }
+        f1();
+      </script>
+
+'of' operator
+============
+  
+   it is used to read the values with the help of any iterator and store references.
+
+Ex:-
+===
+      <script>
+             function f1(){
+               var products=[{Name:"TV",Price:45000},{Name:"Mobile",Price:12000}];
+
+              for(var item of products)}
+           document.write(item.Name+":"item.Price+"<br>");
+              }
+      }
+           f1();
+            </script>
+
+'new' operator
+==============
+        It is adynamic memeory allocating operator used to assign memory for an object dynamically during runtime so that the object related propety can be loaded into memory and are accesible b using a reference.
+
+Syntax:-
+=======
+     var ref=  new Object();
+     ref.Property;
+     ref.Method();
+
+Ex:-
+  <head>
+     <script>
+         funnnction CreateClick(){
+           var pc = new Image();
+           pic.src=""../Images/tv.jpg";
+           pic.width="200";
+           pic.height="200";
+           pic.border=1;
+           document.getElementById("container").appendChild(pic);
+         }
+          </script>
+      </head>
+  <body>
+      <input type="button" value="create Image" onclick="CreateClick()">
+          <div id="container"></div>
+      </body>
+
+'Typeof' 
+=======
+    It checks adn returns typeof object and values stored in reference
+
+Syntax:-
+         typeof reference;
+
+Ex:-
+   <script>
+              function f1(){
+                var product ={
+             Name="TV", Price:4500, IsInTrue:true,
+             ShippedTo:['Hyd','Delhi']
+         };
+    document.write("Shipped to is " + (typeofproduct.ShiipedTo)+"<br>'+"Price is"+(typeof product.Price));
+ }
+f1();}
+</script>
+
+instanceof
+==========
+
+It is a special operator  used to veryify whether the given object is derived from specified class it returns boolean true or false.
+
+Syntax:-
+======
+
+Objectinstance BaseClass.
+
+Ex:-
+
+  <script>
+     function f1(){
+     var pic = new Inage();
+     var names = new Array();
+     document.write(names instanceof Array);
+     document.write(pic instanceof Image)
+}
+f1();
+</script>
