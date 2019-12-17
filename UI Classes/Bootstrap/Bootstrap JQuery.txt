@@ -1,0 +1,272 @@
+Bootstrap JQuery
+================
+
+1) Bootstrap provides a set of jquery which are used to handle the elements dynamically
+2) It requires the jquery library nd bootstrap library for jquery
+
+Alerts allow to dynamically close and display a dialog by using jQuety functions
+the classes that are requires for hadeling alerts are:-
+
+
+The attributs role and data are used by jQuery to handle dynamic interactions are:-
+
+Attribute                             Description
+=====================================================================================
+
+1) .alert -dismissible                It is used to indiacte thatthe alert can be dismissed.
+
+2) .close                             It represents aclose option in the alert.
+
+3) .show                              It  is used to display with animation.
+
+4) .fade                              It is used to display fading effect.
+
+5) .data-dismiss                      It refers to the element that muse be dismissed.
+
+6) .role                              It specifies the role of dialog or alert.
+
+7) .aria-label                         It is ude to define an icon for close..
+
+Example:-
+=======
+    <head>
+     <!--link bootstrap.cc-->
+     <script src="../node-modules/jquery/dist/jquery.js">
+
+     </script>
+     <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+     <script>
+        $(document).ready(function(){
+          $(".alert").hide();
+          $("#del").click(function(){
+             $(".alert").show();
+            })
+             })
+     </script>
+</head>
+<body>
+  <div class="container">
+    <h2>Bootstrap JQuery alerts
+         <button id="del" class="btn btn-danger">Delete</button>
+     </h2>
+     <div class="alert alert-danger alert-dismissible" role="alert">
+     <button class="close" aria-label="Close" data-dismiss="alert">X</button>
+     <h2 class="alert-heading">Record Deleted..</h2>
+    <p class="alert-text">Record Succcessfilly removed from data source<p/>
+  </div>
+</div>
+</body>
+
+
+BootStrap Carousel
+=================
+     1) Carousel is a bootstrap template that is used to display sliding animations in a web page.
+
+     2) The attributes that are used to handle carousel are :-
+
+Attribute                                 Description
+==================================================================
+
+1) carousel                               It is used to define a carousel that contain collection of items.
+
+2) carousel-item                          It contains an individul carousel item
+
+3) slide                                  it defines a sliding effect.
+
+4) data-ride invoke                       It is used to invoke jQuery that allows the carousel animation
+
+5) active                                 It specifies which carousel item must active
+
+
+Syntax:-
+======
+
+<div class="carousel slide" data-ride="carousel">
+   <div class="carousel-inner">
+   <div class="carousel-item">
+      <img src="../Images/slide1.PNG">
+   </div>
+   <div class="carousel-item">
+      <img src="../Images/slide2.PNG">
+   </div>
+   <div class="carousel-item">
+      <img src="../Images/slide3.PNG">
+   </div>
+</div>
+</div>
+</div>
+
+Example:-
+=======
+<head>
+   <!--link bootstrap.css -->
+   <script src="../node_modules/jquery/dist/jquery.js"></script>
+   <script src="../node_modues/bootstrap/dist/js/bootstrap.js"></script>
+   <style>
+      .carouse-inner img{
+     width:100%;
+     height:50%;
+    }
+   </style>
+  <head>
+  <body>
+   <!-- Carousel -->
+     <div class="carousel slide" data-ride"carousel" id="demo">  
+      <!-- carouselitems-->    
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+             <img src="../Images/slide1.PNG">
+          </div>
+        </div>
+       </div>
+  </body>
+          
+Carousel Indicators
+===================
+
+carousel indicator allows to navigate any specific slides and show the current displayed  or active slide it requires following attribues:-            
+
+.carousel-indicators
+.data-target
+.data-slide-to
+
+Exaample:-
+========
+Add the following code above ".carousel-items" before "carousel-inner" element.
+
+<ul class="carousel-indicators">
+  <li class="active" data-target="#demo" data-slide-to="0"></li>
+  <li data-target="#demo" data-slide-to="1"></li>
+  <li data-target="#demo" data-slide-to="2"></li>   
+</ul>
+
+Carousel Controls:-
+=================
+
+The Carousel controls allow navigation to next and previous. It requires a set of attributes.
+
+i) carousel-control-prev
+ii) carousel-control-next
+iii) carousel-control-next-icon
+iv) carousel-control-prev-icon
+v) data-slide[to next and prev]
+
+Example:- Add this  code below carousel inner
+=======
+<a href="#demo" class="carousel-control-prev" data-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</a>
+<a href="#demo" class="carousel-control-next" data-slide="next">
+<span class="carousel-control-next-icon"></span>
+</a>
+
+Summary:-
+=======
+
+Class/Attribute                            Description
+====================================================================================
+
+.carousel                              Creates a new carousel
+.carousel-indicators                   Adds indicators
+.carousel-inner                        Specifies collection of items in carousel.
+.carousel-item                         Specified individual carousel item
+.carousel-control-prev                 Specifies previous button
+.carousel-control-next                 Specifies next button
+.carousel-control-prev-icon            Previous icon
+.carousel-control-next-icon            Next Icon
+.slide                                 Adds css transition for sliding
+.slide-to                              Slides to specific
+data-target                            specifies carousel name  to use.
+data-slide                             specifies sliding to sspecific next,prev,or  any slide index.
+data-ride                              starts the transition on load
+active                                 makes carousel and item active
+
+
+Bootstrap Model
+===============
+
+A model is used to display a dialog that have a functionality of pop-up so taht you can dynamically control the dialog.It requiress the following classes:-
+
+Class Name                        Description
+====================================================================================
+model                          It is used to create a model dialog
+modal-dialog                   It configures a dialog in model
+model-content                  It specifies the content to display in model.
+model-header                   It specifies the header text
+model-title                    it specifies the header text
+modal-body                     It specifiws the modal body
+modal-footer                   It specifies the footer section
+data-dismiss                   it is used to close the modal
+role=dialog                    It sets a dialog role
+role=document                  It sets content role in dialog
+
+
+Example:-
+=======
+<body>
+  <div class="modal modal-dialog-centered">
+     <div class="modal-dialog">
+     <div class="modal-content">
+     <div class="modal-header">
+        <h2 class="modal-title">Delete Record</h2>
+     </div>
+     <div class="modal-body">
+      <p>Are you sure Record will be deleted?</p>
+     </div>
+     <div class="modal-footer">
+       <button class="btnbtn-danger">Delete</button>
+       <button class="btn btn-warning" data-dismiss="modal">Close</button>
+     </div>
+     </div>
+     </div>
+     </div>
+</body>
+
+Note:- To display or hide the models you have to define the following attributes 
+=====
+
+1) role: modal, document
+2) data-target
+3) data-toggle
+Example: Show Hide
+
+<div>
+  <button class="btn btn-primary" data-target="#tip" data-toggle="modal">
+       Show/Hide
+  </button>
+</div>
+<div id ="tip" class=modal? tabindex="-1" role="dialog
+    <!-- modal boy and content -->
+</div>
+
+JQuery for modal
+==============
+
+Modal can be defined withjQuery functon which allows to control the modal dynamically. It returns a modal function to show or hide modal 
+
+${"#modalName")/modal('show');
+$("#modalName").modal('hide');
+
+Bootstrap DropDown List
+========================
+
+A DropDown list contains collection of items used for navigation .It is similar to a select element but allows navigation using menu items the classes are:-
+1) .dropdown
+2) .dropdowm-menu
+3) .dropdown-item
+4) .dropdown-toggle
+5) .data-toggle
+6) dropdrown-link [N/A on every version]
+
+Syntax:-
+======
+<div class="dropdown">
+ <div class="dropdown-menu">
+  <a href="#" class="dropdwon-item">Java</a>
+</div>
+</div>
+Note:- To show or hide the items in dropdown use the data attribute "data-toggle"
+====
+
+
+  

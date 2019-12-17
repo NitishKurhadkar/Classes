@@ -1,0 +1,26 @@
+Example:-  
+<head>
+  <!-- link bootsprap.css -->
+  <script ...Jquery.js>
+   <script src="../node_modules/bootsrap/dist/js/bootstrap.bundle.js">
+</script>
+</head>
+<body>
+ <div class="container">
+   <div class="dropdown">
+   <button class="btn btn-primary dropdown-toggle data-toggler="dropdown">Courses</button>
+  <div class="dropdown-menu">
+   <a href="#" class="dropdown-item"><span class="dropdown-item-texy">.NET</span></a>
+   <a href="#" class="dropdown-item"><span class="dropdown-item-texy">JAVA</span></a>
+   <a href="#" class="dropdown-item"><span class="dropdown-item-texy">UI Technologies</span></a>
+    <div class="dropdown-divider"></div>
+   <a href="../register.html" target="frameBody" claas="dropdown-item>Register<//a>
+    </div>
+   </div>
+   </div>
+</div>
+<ifram name="frameBody" width="600" height="300" style="border-style:none;"></iframe>
+</div>
+</div>
+   
+   
