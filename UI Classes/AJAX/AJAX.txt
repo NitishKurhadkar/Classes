@@ -1,0 +1,5 @@
+1) AJAX is Asynchrouns JavaScript and XML.
+2) Asynchronus is a technique that uses unblocking mechanism, where the request for any resource will be handled without waiting for response.
+3) AJAX uses javaScript function for interaction and XML to store data.
+4) AJAX allows partial postback i.e. the page can load new details or handle new interactions without reloading the page.
+5) JQuery provides inbuild support for AJAX interactions by using a set of AJAX functions

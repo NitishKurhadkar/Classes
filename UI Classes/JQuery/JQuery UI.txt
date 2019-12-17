@@ -1,0 +1,55 @@
+JQuery UI
+=========
+
+JQuery provides the UI plugin that allows to handel various interactions with pre-defiened functions it requires the following libray "jquery-ui.js"
+
+Setting Up  UI:-
+==============
+
+1) Visit to thewebssite
+                https://jqueryui.com/
+
+2) Download "Stable" UI ".zip" file
+
+3) Extract the ZIP and copy
+               jquery-ui.js
+
+4) Goto your Project and add in "JQuery" folder of "node_modules".
+
+JQuery UI Interactions
+======================
+
+1) Draggable :- It allows to defined an interaction which interact any html element on page. the element can float over page.
+
+Example:-
+=======
+
+<head>
+  <style>
+     img{
+           width:100px;
+           height: 100px;
+        }
+ </style>
+ 
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+<script src="../node_modules/jquery/jquery-ui.js">
+</script>
+<script>
+ @(document).ready(function(){
+    $("#pic").draggble();
+  })
+</script>
+</head>
+<body>
+  <img id="pic" src="../Images/tv.jpg">
+</body>
+
+
+2) Resizable :- It allows to resize any element dynamically so that you can adjust the height and width alternatevly you can define CSS to adjust height and width.
+
+3) Droppable :-  It allows to drag and drop any element dynamically from one location to another it requires source and target location.
+
+4) Selectable :- It allows to select any element dynamically so that it can heighlight the slected element. You have to define the effects on selection.
+
+5) Sortable :- It allows to sort items in a list dynamically it requires dynamic data to display in table or list.

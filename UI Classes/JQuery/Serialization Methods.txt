@@ -1,0 +1,55 @@
+Serialization Methods:-
+=====================
+
+i) Serialization is a process of writing data into an JSON format and reading from JSON is known as de-serialization
+
+2) Serialization is required to transport data crosss-platform. The methods used are:-
+
+i)serialize()           : Returns into string
+ 
+ii) serializeArray()    : Returns into Array
+
+
+Example:-
+=======
+
+   <head>
+    <!--- script jquery.js-->
+        <script>
+       $(doument).ready(function(){
+       $("#btnEffects").click(function(){
+         $("#data").html($("form").serialize());
+           var results = $("form").serializeArray();
+
+           for(vra property in results){
+    alert(result[property].value);
+}
+});
+});
+</script>
+</head>
+<body>
+   <button id="btnEffects">Serialize</button>
+ <form>
+  <dl>
+ <dt>Name</dt>
+  <dd><input type="text" name="txtName"></dd>
+
+
+ <dt>Price</dt>
+  <dd><input type="text" name="txtPrice"></dd>
+ <dt>City</dt>
+ <dd>
+ <select name="lstCity">
+   <option>delhi</option>
+   <option>Hyd</option>
+ </select>
+</dd>
+</dl>
+</form>
+<div>
+<div id="data">
+</div>
+<div id="jsondata">
+</div>
+</body>

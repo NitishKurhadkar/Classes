@@ -1,0 +1,32 @@
+It applies css class to any HTML element
+
+Syntax:-
+======
+    $("#id").addClass("ClassName");
+
+
+Example:-
+=======
+<head>
+<script src="...jquery.js"></script>
+<script>
+  $(document).ready(function(){
+       $("#btneffects").click(function(){
+        $("#heading").addClass("effects");
+       });
+     });
+ </script>
+  <style>
+    .effects{
+        background-color:yellow;
+        color:red;
+        width:300px;
+        heifght:70px;
+        text-align:center;
+      }
+ </style>
+ </head>
+<body>
+   <button id-"btnEffects">Apply Effects <button>
+ <h2 id="heading">Welcome to JQuery</h2>
+</body>

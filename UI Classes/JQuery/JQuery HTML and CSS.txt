@@ -1,0 +1,142 @@
+JQuery HTMl and CSS library
+===========================
+
+JQuery provides a set of functions that are used to handle the HTML DOM elements and CSS. THe functions are:-
+
+1) html() :- It present the text with format defined using text and methods.
+
+Syntax:- 
+======
+
+    $("p").html("Welcome to<b>JQuery</b>");
+
+
+2) text() :- It present the text without any formats. It is an RC data function.
+
+Syntax:-
+======
+     $("p").text("Welcome to JQuery");
+
+3) Css() :- It applies a set of CSS effects to any HTML element.
+
+Syntax:-
+======
+
+     $("p").css("background-color","red");
+                OR
+     $("p").css({"background-color":"red","color":"white"}); 
+
+4) val():- It defines a value for any specified element it can get and set the value.
+
+Syntax:-
+======
+       
+ $("p").val("Jon");
+
+5)attr():- It is used to define values for various attributes of any HTML element.
+
+Syntax:-
+======
+
+  $("name").attr("attribute":"value");
+
+Example:-
+=======
+
+   <script> 
+          $(document).ready(function(){
+             $("#txtName").val("John");
+             $("#pic").attr("src","../Images/tv.jpg");
+           });
+    </script>
+
+ </head>
+  <body>
+   User Name:- <input type="text" id="txtName">
+    <div>
+      <img id="pic" width="100" height="100">
+    </div>
+   </body> 
+
+
+
+Append Function                                      Description
+==================================================================================================
+
+befor()                                       It inserts a new content above the existing content
+
+after()                                       It inserts a new content below thee existing
+
+prepend()                                     It adds content as prefix to existing 
+
+append()                                      It adds content as suffex to existing
+
+
+Example:-
+=======
+
+<script>
+     $(document).ready(function(){
+        $("#p3").before("<p>Para-2</p>");
+        });
+</script>
+<body>
+  <p id="p1">This is para-1</p>
+  <p id="p3">this is para-3</p>
+</body>
+
+
+appentTO():- It is used to append any content to the specified parent elemnt as child element
+==========
+
+Syntax:-
+======
+  &("content").appendTO("target");
+
+Note:- append() is used to add any content to the current element and appendTo() is used to add  content in anyy specific element
+====
+
+Example:-
+======
+
+   <script>
+             $(document).ready(function(){
+                      $("<li>Item-1</li>").appendTo("#terms");
+                      $("#terms").append("<li>Item-2");
+ });
+ </script>
+</head>
+<body>
+<ol id="terms">
+</ol>
+</body>
+
+
+
+
+Function                             Description
+===========================================================================
+
+1) remove()                         It removes any element from DOm herarchy.
+
+2) detach()                         it removes the element by keeps the data.
+
+3) empty()                          It keeps the element but cleans the data.
+
+
+Example:-
+=======
+<head>
+<script>
+    $(document).ready(function(){
+       $("#p2").empty();
+       $("#p1").remove();
+      });
+    </script>
+ </head>
+<body>
+  <p id="p1">Para-1</p>
+  <p id="p2">Para-2</p>
+  <p id="p3">Para-3</p>
+</body>>
+

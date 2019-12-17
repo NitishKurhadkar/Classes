@@ -1,0 +1,51 @@
+JQuery AJAX functions
+
+1) ajaxComplete() :- It is a JQuery AJAX method which is used to display the actions to perform when AJAX request is completed. It identifies the Action Triggered and gets the status for action.
+
+Example :-
+=======
+
+<head>
+  <style>
+   #start{
+            border: 2px black solid;
+ 	    background-color:darkcyan;
+	    color:white;
+            width:100px;
+            height:30px;
+        }
+  </style>
+  <script src="../node_modules/jquery/dist/jquery.js">
+  </script>
+  <script>
+     $(document).ajaxComplete(function(){
+       $("#log").text("Ajax Request Completed");
+   })
+   $(document).ready(function(){
+     $("#start").click(function(){
+       $("#result").load("../data/products.json");
+    })
+  })
+  </script>
+  </head>
+<body>
+   <div id="start">Start</div>
+   <div id="log"></diV>
+   <pre id=result"></pre>
+ </body>
+
+- Add a new folder "data"
+- Add a new file into folder by name "products.json"
+
+[
+   {
+       "Name":"Mobile"
+       "Price":45000.66
+   },
+   {
+      "Name":"Moible"
+      "Price":12000.44
+   }
+]
+
+Note: Test this program only on live server otherwise it will not work.

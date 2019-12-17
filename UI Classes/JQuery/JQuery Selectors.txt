@@ -1,0 +1,47 @@
+JQQuery Selctors
+================
+
+ Selectors specify how any element in a page is accessable to JQuery library. The commonly used JQuery selectors are:-
+
+Selectors                        Description
+==========================================================
+
+1)Tag Selector			It Refers to the tag name so that it can apply any effect for similar type of tag.You can also group the tax.
+                     
+                                Syntax:-
+                                ======
+                                    $("h2,p")
+
+2)ID selector                   It is used to acceess any element with reference of it's id. The id's are refered by using "#" and are defined by using attribute.
+                                
+                                Syntax:-
+                                ======
+                                  <p id="para">
+                                  $("#para")
+
+3)Class Selector               It is used to refer any element by using the class name. the classes are defined with the class and they are accessible by using "."
+                                Syntax:-
+                                ======
+ 
+                                    <p class="para>
+                                     $("para")
+
+Example:-
+=======
+
+<head>
+  <script src="...jquery.js"></script>
+  <script>
+     $(document).ready(function(){
+        $("h2").text("JQuery Selector");
+        $("#para").text("selectors are type, ID and class");
+            
+$(".para").text("This is a class selectors");
+});
+</script>
+</head>
+<body>
+<h2></h2>
+<p id="para"></p>
+<p class="para">
+</body>

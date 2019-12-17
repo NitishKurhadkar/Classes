@@ -1,0 +1,22 @@
+JQuery Syntax:-
+=============
+
+$(document).ready(function(){
+        //actions on library
+}
+
+Example:-
+=======
+
+<head>
+  <script sec="../node_modules/jquery/dist/jquery.js">
+  </script>
+  <script>
+     $(document).ready(function(){
+        document.write("Welcome to JQuery");
+       });
+   </script>
+  </head>
+  <body>
+  </body>
+

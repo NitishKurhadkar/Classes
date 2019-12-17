@@ -1,0 +1,29 @@
+JQuery provides set of function that are used to handel animation with objects you can define pre-define transition for any element dynamically it includes the speed and easing effects.
+
+1) Show/Hide
+   a) show()
+   b) hide()
+   c) toggle()
+
+
+This method are used to show or hide any element dynamically. These methods can automatically change the display mode to show or hide.
+
+Example:-
+======
+
+<script>
+   $(document).ready(function(){
+      $("button").click(function(){
+          $("#list").toggle(3000);
+        })
+       })
+ </script>
+ </head>
+ <body>
+    <button>Show/Hide</button>
+   <ol id="list"> 
+    <li>variables</li>
+    <li>Data Types</li>
+    <li>Operator</li>
+  </ol>>
+</body>

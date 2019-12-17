@@ -1,0 +1,9 @@
+Syntax:-
+ $.each(collection,, function(index,field){
+    field.value;
+})
+
+Example:-
+ $.each(results, function(index,field){
+   $("#jsondata").append("<li>"+field.value+"</li>");
+})

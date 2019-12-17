@@ -10,7 +10,7 @@ Flash
 Banners for webpage
 ===================
 
-A webpage can be defined with following typpes of banners 
+A webpage can be defined with following types of banners 
 
 Type                                       Size (in pixels)
 ==========================================================================================================

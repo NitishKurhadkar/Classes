@@ -1,0 +1,78 @@
+Sliding Animation
+================
+
+Example:-
+=======
+
+
+1) SlidingUp()
+2) sliding down()
+3)slidingToggle()
+
+Example:-
+=======
+
+$("button").click(function){
+   $("#pic").slideToggle(6000)
+  })
+
+
+Animate()
+
+It is a JQuery animation function used to animate which can use CSS for changing animation.
+
+Syntax:-
+======
+    animate({left:'200px'})
+
+Note: The CSS attributes are supported in JQuery only when defined with additional styles.
+
+
+JQuery Events:-
+=============
+
+Event specifies a delegate  (function pointer) that defines the action to be performed by any element.JQuery can use all JavaScript event in the same way how they are defined in JavaSript.
+
+Event                                 Description
+===================================================================
+
+click()                            It specifies actions when element clicked.
+
+blur()				   Actions when element lost focus
+
+focus()                            Actions when element get focus
+
+select()                           Actions wwhen element get selected
+
+change()                           Action when element gets changed
+
+submit()                           Action on form submit
+
+keydown()                          Actions when key is down.
+
+keypress()                         press, and up
+
+keyup()
+
+mouseover()
+
+mouseout()
+
+mousemove()
+
+mousedown()
+
+mouseup()
+
+mousemove()
+
+Syntax:-
+======
+
+<script>
+ $(document).ready(function(){
+     $("#pic").mouseover(function(event){
+         alert("Mouse over Image"+event.clientX);
+   })
+})
+</script>

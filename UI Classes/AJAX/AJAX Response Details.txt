@@ -1,0 +1,33 @@
+AJAX Response Details
+======================
+
+The request made to any resource will return the response which includes the following detials:-
+a) status :- It defines status code
+b) statusText :- It defines status text.
+c) responseText :- The data present in file.
+
+
+Example:-
+=======
+   $(document).ajaxComplete(function(event,xhr,setting){
+       $("#log").html(`<dl><dt>Status Code</dt><dd>${xhr.status}</dd><dd>${xhr.status}</dd><dt>Response Text</dt><dd>${xhr.responseText}</dd></dl>');
+     })
+
+Status Code                        Reason
+========================================================
+
+100          			Continue
+200				Ok
+201				Created
+300				Multiple Choices
+301				Moved Permanently
+302				Found
+400				Bad Request
+401				unauthorized
+403				Forbidden
+404				Not Found
+407				Proxy Authentication Required
+408				Request TIme-out
+413				Request Entity Too Large
+500				Internal Server Error
+501				Not Implemented

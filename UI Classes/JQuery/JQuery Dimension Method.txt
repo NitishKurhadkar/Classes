@@ -1,0 +1,20 @@
+JQuery provides a  set of methods that are used to change the dimension of any perticular element which includes the following:-
+
+1) height() ]
+            ]} normal height/width
+2) Width()  ]
+
+3) innerHeight()  ]
+                  ]
+4) innerWidth()   ]
+                  ]}  without margin and boder
+5) outerHeight()  ]
+                  ]
+6) outerWidth()   ]
+
+
+
+Syntax
+======
+
+$("div").height(200).width(300);

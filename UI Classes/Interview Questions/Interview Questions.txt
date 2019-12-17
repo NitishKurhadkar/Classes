@@ -1,0 +1,44 @@
+JavaScript
+=========
+
+1) How to refer the following in DOM hierarchy [Apply Name for button 2]?
+  <body>
+    <form>
+        <inuput type="text">
+        <input type="button" value="submit">
+        <input type="button">
+    </form>
+   </body>
+  write JS to apply value to button2 as cancel
+
+Ans=>
+==============================================================================================================
+2)What is difference betwwen var, let and const?
+
+==============================================================================================================
+3) How to add value into following array
+    var prods=["TV",Mobile"];
+    Add "shoe after  Tv
+Ans=>
+prods.splice(1,0,"Shoe")
+==============================================================================================================
+4) How to verify the value type present in a variable?
+  var a=10
+
+Ans = > typeof(a)
+
+Note:- 
+In JavaScript, there are two ways to check if a variable is a number :
+isNaN() – Stands for “is Not a Number”, if variable is not a number, it return true, else return false.
+typeof – If variable is a number, it will returns a string named “number”.
+
+==============================================================================================================
+5) How to access all properties and value from the objects?
+         var product={id:1 Name:"TV"}
+
+Ans=> 
+for(var key in products)
+{
+  var value = object[key]
+}
+==============================================================================================================
