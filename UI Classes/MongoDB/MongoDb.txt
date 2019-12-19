@@ -1,0 +1,123 @@
+          Mango DB
+          ========
+
+Mongo is an document oriented open source
+
+It is a Non-SQL database program
+ 
+It is schemealess and JavaScript based
+
+It supports the features like high availblility, load balancing, indexing, Data Replication etc.
+
+         Installing Mongo DB
+        =====================
+
+1) visit 
+     
+         http://www.mongodb.com/download-center/community
+
+2) Download ".msi" for windows
+
+3) Install from ".msi" file
+
+
+Start MongoFb Server
+====================
+
+- Open windows -> Run option
+- Type "services.msc"
+- Right CLick on "MongoDb Server"
+- Select "Start""
+
+Start Mongo Client:
+-Open to following path
+          C:\Program Files
+          |_MongoDb
+            |_Server
+              |_4.2
+                |_Bin
+
+Type the following commands
+
+This will connect to server and start mongo client
+
+                   MongoDb ommands
+
+1) To View the list of existing database in MongoDb Server
+    > show dbs
+
+2) Create or TO Change into Database
+           > use databaseName
+           > use shoppingDb
+
+3) To View the active databasse
+
+       >db 
+
+RDBMS                               Mongo
+==========================================
+Database                         Database
+Table                            Collection
+Record/Row                       Document
+Field/Column                     Field
+Join                             Embeded Document
+
+4) Creating a new Collection (Table)
+
+>db.createCollection("tblName",{option})
+
+
+Table Option                Description
+==============================================
+
+
+autoindexId                 (boolean) It sets an auto primary key for table.
+
+max                         (number) It specifies the maximun number of records allowed.
+
+size                        (number) It specifies the space to be allowed in mermory for table.[in bytes]
+
+capped 			    (boolean) It overwrites the old entries with new when set to true.
+
+Syntax:-
+======
+>db.createCollection("tblcategory",{autoIndexId:true, max:10, size:5242880, capped:true})
+
+5) to view list of table in Database
+  > show  collections
+    
+6) To insert records into Table
+
+ > db.collectionName.insert({}) //for one
+ >db.collectionName.insert([{},{}]) // many
+
+Example:-
+=======
+>db.tblproducts.insert([{Name:"Samsung TV", Price:34000.55},{Name:"Nike Casuals", Price:4500.55}])
+
+7) To read records from table
+
+ >db.collectionName.find()
+ >db.collectionName.find().pretty()
+ >db.collectionName.find({query}).pretty()
+
+Operators in Query
+==================
+
+ $gt => Greater Than
+ $gte => Greater Than Equal
+ $lt => Less Than
+ $ite => Less Than or Equal
+ $ne => Not Equal
+
+Example:-
+=======
+
+Less Than
+
+db.tblproducts.find({"Price":{$it:1500}}).pretty()
+
+Ex:Equal
+
+db.tblproducts.find({"Name":"Mobile"}).pretty()
+             

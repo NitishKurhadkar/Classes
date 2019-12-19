@@ -1,0 +1,12 @@
+1) Vist the following Page
+
+  https://ieeexplore.ieee.org/document/794195
+
+2) [Cop - DOI number]
+
+3) Visit
+       https://www.sci-hub.tw/
+              [Paste DOI number and Open]
+
+4) Visit for project preview
+  http://www.ilab-australia.org/ishop2016/
