@@ -5,7 +5,7 @@ Mongo is an document oriented open source
 
 It is a Non-SQL database program
  
-It is schemealess and JavaScript based
+It is schemaless and JavaScript based
 
 It supports the features like high availblility, load balancing, indexing, Data Replication etc.
 
