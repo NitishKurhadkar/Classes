@@ -41,7 +41,8 @@ Type the following commands
 
 This will connect to server and start mongo client
 
-                   MongoDb ommands
+                   MongoDb Commands
+                   ================
 
 1) To View the list of existing database in MongoDb Server
     > show dbs
@@ -77,7 +78,7 @@ max                         (number) It specifies the maximun number of records 
 
 size                        (number) It specifies the space to be allowed in mermory for table.[in bytes]
 
-capped 			    (boolean) It overwrites the old entries with new when set to true.
+capped 		        (boolean) It overwrites the old entries with new when set to true.
 
 Syntax:-
 ======
@@ -88,7 +89,7 @@ Syntax:-
     
 6) To insert records into Table
 
- > db.collectionName.insert({}) //for one
+ >db.collectionName.insert({}) //for one
  >db.collectionName.insert([{},{}]) // many
 
 Example:-
