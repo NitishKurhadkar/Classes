@@ -1,0 +1,38 @@
+Tables and Cards using Iteration
+================================
+
+
+<script>
+  <!-create angular module with products=[{Name:""",price:"",Mfd:"",Photo:""}
+                                               {{,
+                                               ];
+         -->
+</script>
+<body> ng-app=""ng-controoler="">
+  <table class="table table-hover">
+  <thead>
+   <tr>
+   <th>Name</th>
+   <th>Price</th>
+   <th>Manufactureed</th>
+   <th>Preview</th>
+  </tr>
+  </thead>
+ </tbody>
+  <tr ng-repeat="product in products">
+   <td>{{produt.name}}</td>
+   <td>{{producut.Price}}</td>
+   <td>{{product.Mfd}}</td>
+   <td>
+    <img src="{{product.Photo}}" width="80" heigth="80">
+  </td>
+ </tr>
+ </tbody>
+</table>
+<h3>Products Catalog</h3>
+<div class="card-deck">
+  <div class="card" ng-repeat="item in products">
+   <!-- card body,header,footer -->
+  </div>
+  </div>
+

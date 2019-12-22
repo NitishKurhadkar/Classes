@@ -1,0 +1,36 @@
+Angular JS
+==========
+
+1) Aungular JS is open source, cross platform JavaScript based framework.
+
+2) Is is Maintained by google and large community of developers to address the issue in a single page application[SPA]
+
+3) Angular JS uses "Apache Cordova" a cross platform framework used to build mobile applications.
+
+
+Installing Angular JS:-
+=====================
+
+1) Open your project location in command prompt
+
+2) Type the following
+   
+     C:\Flipkart> npm install angular
+
+          node_modules
+          |_angular
+            |_angular.js
+
+Angular JS Framework Components:-
+===============================
+
+- Modules
+- Controllers
+- Models
+- Views
+- Directives
+- Filters
+- Services
+- Factories
+- Routing
+           

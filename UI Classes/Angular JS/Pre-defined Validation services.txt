@@ -1,0 +1,18 @@
+Pre-defined Validation services
+================================
+
+1)Angular provides build in validation services that are used to verify the values in input field and display validation messages .
+2)The Angular validation services can bedefined at form level or element level. The form state services are:-
+
+Form State Service                      Description
+==============================================================================================================
+
+1)$pristine                        No fields hav been modified yet
+
+2)$dirty                           One or more fields modified
+
+3)$invalid                        The form content is not valid, Any one or more fields in form are not valid.
+
+4)$valid                          The form content is valid, all fields are valid.
+
+5)$submitted                      The form is submitted

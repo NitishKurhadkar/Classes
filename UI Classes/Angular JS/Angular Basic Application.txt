@@ -1,0 +1,49 @@
+Angulat BasicnApplication
+=========================
+
+<script src=".../node_modules/angulr/ngular.js">
+   </script>
+ <script>
+      var app=angular.module("DemoApp",[]);
+      app.controller("Home Controller",function($scope){
+       var masg = "Welcome to Angular JS"
+       $scope.msg;
+}
+</script>
+</head>
+<body ng-app="DemoApp" ng-controller="HomeController">
+<h2>{{msg}}</h2>
+</body>  
+
+itrations using "ng-repeat"
+
+Example:-
+=======
+
+<scipt>
+  var app = angular.mdule("DemoApp",[]);
+  app.controller("HomeControoler",function($scope){
+          $scope.data={
+                 {
+                  Category:"Electronics",Products:["Samsing TV","Mobile"]
+                    },
+                     {
+                     Category:"Shoes",
+                     Products:["Nike Casuals", "Lee Cooper Boot"]
+ }
+}
+})
+</script>
+</head>
+<bodyng-app="DemoApp" ng-controller="HomeController">
+<ol>
+  <li ng-repeat="item in data">
+        {{item.Category}}
+   <ul>
+     <li ng-repeat="product in item.Productss">
+    {{products}}
+    </li>
+   </ul>
+ </li>
+</ol>
+</body>

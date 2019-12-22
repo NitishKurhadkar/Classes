@@ -1,0 +1,24 @@
+Filters in Angular JS:
+=====================
+       Filters are used to format, filter and sort the data dynamically . Filters are appended to text or component by usibg "|" (pipe).
+
+
+Filters
+=======
+
+uppercase     converts to uppercase
+
+lowercase     converts to uppercase
+
+orderBy       Display in ascending or descending order.
+
+filter        Display one the records that match given string.
+
+number        Applies number format
+
+currency      Applies currency format
+
+date          Applies date format.
+
+limitTO       Restricts only the record required
+

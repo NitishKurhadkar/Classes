@@ -1,0 +1,16 @@
+Input State Service                            Description
+===============================================================================================
+
+1)$pristine                             Field Not modified Yet
+
+2)$dirty                                Field have been Modified
+
+3)$invalid                              The Field content is not valid
+
+4)$valid                                The Field content is valid
+
+5)$untouched                            The Field content is not touched
+
+6)$touched                              The Field content is touched
+
+7)$error                                To identify the specific validational error in field

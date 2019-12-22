@@ -1,0 +1,56 @@
+Directive
+=========
+
+Directive is a function in Angular JS that cn handle various functionalities such as
+
+a) Extending Markup
+b) Returnung Markup
+c) Making Markup more interactive
+
+The basic directive used for angular application are:-
+
+
+Directive                             Description
+========================================================
+
+ng-app                             It defines the scope of angular app..
+ng-module                          It applies angular app dyanamically.
+ng-controller                      It applies controller dynamicaly.
+ng-model                           It defines model object to store data.
+ng-bind                            It binds the model data to view.
+
+ng-show         ]                  To show or to hide any element 
+ng-hide		]                  dynamically
+
+ng-if                              To add or remove element from DOM.
+
+ng-repeat                          It repeats the HTML element based on give iteration.
+
+ng-class        ]     
+ng-class-even   ]                  Applies Css class to element 
+ng-class-odd    ]                  at even, odd occurance.
+
+ng-click        ]                  Click Event
+ng-mouseover  
+ng-mouseout     ]                  Mouse Event
+ng-mousedown
+ng-mouseup
+
+
+
+ng-key
+ng-keydown      ]                  Key EVents
+ng-keypress
+
+ng-blur
+ng-focus
+ng-change       ]                  Miscelaneous Events
+ng-cut
+ng-copy
+ng-paste
+
+Syntax:-
+  <body ng-app>
+   Name:<input type="text" ng-model="uname">
+   <h2 ng-bind="uname"></h2>
+  </body
