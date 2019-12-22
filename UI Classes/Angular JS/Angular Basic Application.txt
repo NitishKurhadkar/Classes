@@ -1,7 +1,7 @@
 Angulat Basic Application
 =========================
 
-<script src=".../node_modules/angulr/ngular.js">
+<script src=".../node_modules/angular/Angular.js">
    </script>
  <script>
       var app=angular.module("DemoApp",[]);
