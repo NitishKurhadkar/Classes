@@ -1,7 +1,7 @@
 Angular JS
 ==========
 
-1) Aungular JS is open source, cross platform JavaScript based framework.
+1) Angular JS is open source, cross platform JavaScript based framework.
 
 2) Is is Maintained by google and large community of developers to address the issue in a single page application[SPA]
 
