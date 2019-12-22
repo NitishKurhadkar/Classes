@@ -15,7 +15,7 @@ Angulat Basic Application
 <h2>{{msg}}</h2>
 </body>  
 
-itrations using "ng-repeat"
+iterations using "ng-repeat"
 
 Example:-
 =======
