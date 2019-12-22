@@ -1,4 +1,4 @@
-Angulat BasicnApplication
+Angulat Basic Application
 =========================
 
 <script src=".../node_modules/angulr/ngular.js">
