@@ -1,4 +1,4 @@
-Angulat Basic Application
+Angular Basic Application
 =========================
 
 <script src=".../node_modules/angular/Angular.js">
