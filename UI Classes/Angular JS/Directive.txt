@@ -1,7 +1,7 @@
 Directive
 =========
 
-Directive is a function in Angular JS that cn handle various functionalities such as
+Directive is a function in Angular JS that can handle various functionalities such as
 
 a) Extending Markup
 b) Returnung Markup
@@ -13,14 +13,14 @@ The basic directive used for angular application are:-
 Directive                             Description
 ========================================================
 
-ng-app                             It defines the scope of angular app..
+ng-app                             It defines the scope of angular app.
 ng-module                          It applies angular app dyanamically.
-ng-controller                      It applies controller dynamicaly.
+ng-controller                      It applies controller dynamically.
 ng-model                           It defines model object to store data.
 ng-bind                            It binds the model data to view.
 
 ng-show         ]                  To show or to hide any element 
-ng-hide		]                  dynamically
+ng-hide	       	]                  dynamically
 
 ng-if                              To add or remove element from DOM.
 
@@ -39,7 +39,7 @@ ng-mouseup
 
 
 ng-key
-ng-keydown      ]                  Key EVents
+ng-keydown      ]                  Key Events
 ng-keypress
 
 ng-blur
