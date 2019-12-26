@@ -1,0 +1,73 @@
+Angulat HTTP Service
+====================
+
+A Service provide pre-defined buiseness logic which is used to perform any specific functionality
+
+Angular Provides serveral pre-defined sservices like $http,$location,$interval etc.
+
+http service is used by Angular to make http request to any server side technology and get response of data. It allows to fetch or submit data using HTTP server.
+
+
+Syntax:-
+=======
+$http.get("url").then(function(response{});
+
+
+                           MEAN Stack
+                           ==========
+
+M      - MongoDb                        - Database
+E      - Express                        - Middlewaree
+A      - Angular                        - Client Side
+N      - Node JS                        - Server Side
+
+
+
+Creating Database in MongoDB:-
+============================
+
+1) Login to MonogoClient
+
+C:\Program Files\MongoDB\Server\4.2\Bin>
+
+2) Type "mongo.exe"
+       >use shoppingdb
+       >db.createCollection("tblproducts");
+       >db.tblproducts.insert({Name:"Samsing TV",Price:45000.66})
+               .......similarly add some products.......
+
+Creating API with Express and Node JS:
+=====================================
+
+1) Goto your project and install packages
+ > nmp install angular
+ > npm install express
+ > npm install mongodb
+
+2) Add a new node js file
+    "api.js"
+
+varmongoCLient = require("mongodb").MongoClient;
+
+var express=require("express");
+
+var url="mongodb://127.0.0.1:27017";
+var app = express();
+
+app.get("/getProducts",function(req,res){
+  mongoClient.connect(url,function(err,db){
+      if(!err){
+                   var dbo=db.db("shoppingdb");
+                   dbo.collection("tblproducts").find({}).toArray(function(err,docs,fields){
+                                            if(!err){
+                                                   res.send(docs);
+                                                  }
+                                            else{
+                                          res.send(err);
+                           }
+                        })
+                     }
+                    })
+           });
+app.listen(8080);
+console.log("Server Started...");

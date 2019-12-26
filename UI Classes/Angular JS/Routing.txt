@@ -1,0 +1,61 @@
+It is a technique used in single page application to update the page using new details without reloading the page.
+
+Example:-
+=======
+
+1) Vist the site
+       www.angularjs.org
+2) Goto "Download"
+
+3) Select "Browse Other Modules"
+
+4) Right Click and "Save Link As" for "angular-roue.js"
+
+5) Save file into your "node_modules/angular"
+
+6) Add the following pages into project
+             -index.html
+             -home.html
+             -about.html
+             -contact.html
+
+7) Index.thml [code]
+<head>
+  <style>
+    .section{
+                   height:350px;
+                   margin-top:20px;
+             }
+   </style>
+   <!-- Bootstrap.css -->
+   <script src="../node_modules/angular/angular.js">
+   </script>
+   <script src="../node_modules/angular/angular-route.js"></script>
+   <script>
+      var app=angular.module("DemoApp",["ngRoute"]);
+         app.config(function($routeProvider){
+          $routeProvider
+         .when("/",{ templateUrl:"home.html"})
+         .when("/home",{ templateUrl:"home.html"})
+         .when("/about",{ templateUrl:"about.html"})
+         .when("/contact",{templateUrl:"contact.html"})
+        })
+    })
+    app.controller("IndexController",function($scope){
+  })
+</script>
+</head>
+<body ng-app="DemoApp"  ng-controller="IndexController">
+   <div class="btn-toolbar">
+
+<a href="#!home" class="btn btn-primary">Home</a>
+<a href="#!about" class="btn btn-primary">About</a>
+<a href="#!contact" class="btn btn-primary">Contact</a>
+
+</div>
+<div>
+<div class="section"
+  <div ng-view></div>
+</div>
+</div>
+</body>

@@ -1,0 +1,52 @@
+Consume API in Angular JS:-
+=========================
+
+1) Add a new HTML FIle
+              "Home.html"
+
+<head>
+  <!-- link bootstrap.css-->
+  <script src="../node_modules/angular/angular.js">
+  </script>
+  <script>
+    var app=angular.module("DemoApp",[]);
+    app.controller("HomeController",function($scope,$http){
+       $scope.products=[];
+       $http.get("http://126.0.0.1:8080/getProducts")
+       .then(function(response){
+         $scope.products=response.data;
+       })
+ })
+</script>
+</head>
+<body ng-app="DemoApp" ng-controller="HomeController">
+<div class="container">
+ <h2>Prooducts List</h2>
+<table class="table table-hover">
+<thead>
+ <tr>
+    <th>Name</th>
+    <th>Price</th>
+  </tr>
+</thead>
+<tbody>
+<tr ng-repeat-"item in products">
+<td>{{item.Name}}</td>
+<td>{{item.Price|currency:'&#8377;'}}
+</td>
+ </tr>
+</tbody>
+</table>
+</div>
+</body>
+
+
+Start API:
+========     
+  >node api.js
+
+Run HTML file:-
+=============
+
+    http://localhost/Flipkart/Angular/home.html
+             

@@ -1,12 +1,12 @@
-Angular Basic Application
+Angulat BasicnApplication
 =========================
 
-<script src=".../node_modules/angular/Angular.js">
+<script src=".../node_modules/angulr/ngular.js">
    </script>
  <script>
       var app=angular.module("DemoApp",[]);
       app.controller("Home Controller",function($scope){
-       var msg = "Welcome to Angular JS"
+       var masg = "Welcome to Angular JS"
        $scope.msg;
 }
 </script>
@@ -15,17 +15,17 @@ Angular Basic Application
 <h2>{{msg}}</h2>
 </body>  
 
-iterations using "ng-repeat"
+itrations using "ng-repeat"
 
 Example:-
 =======
 
-<script>
-  var app = angular.module("DemoApp",[]);
-  app.controller("HomeController",function($scope){
+<scipt>
+  var app = angular.mdule("DemoApp",[]);
+  app.controller("HomeControoler",function($scope){
           $scope.data={
                  {
-                  Category:"Electronics",Products:["Samsung TV","Mobile"]
+                  Category:"Electronics",Products:["Samsing TV","Mobile"]
                     },
                      {
                      Category:"Shoes",
@@ -40,7 +40,7 @@ Example:-
   <li ng-repeat="item in data">
         {{item.Category}}
    <ul>
-     <li ng-repeat="product in item.Products">
+     <li ng-repeat="product in item.Productss">
     {{products}}
     </li>
    </ul>
