@@ -8,7 +8,7 @@ Tables and Cards using Iteration
                                                ];
          -->
 </script>
-<body> ng-app=""ng-controoler="">
+<body> ng-app=""ng-controller="">
   <table class="table table-hover">
   <thead>
    <tr>
@@ -18,10 +18,10 @@ Tables and Cards using Iteration
    <th>Preview</th>
   </tr>
   </thead>
- </tbody>
+ <tbody>
   <tr ng-repeat="product in products">
    <td>{{produt.name}}</td>
-   <td>{{producut.Price}}</td>
+   <td>{{product.Price}}</td>
    <td>{{product.Mfd}}</td>
    <td>
     <img src="{{product.Photo}}" width="80" heigth="80">
