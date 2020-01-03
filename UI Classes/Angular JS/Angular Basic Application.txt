@@ -1,12 +1,12 @@
-Angulat BasicnApplication
+Angular Basic Application
 =========================
 
-<script src=".../node_modules/angulr/ngular.js">
+<script src=".../node_modules/angular/angular.js">
    </script>
  <script>
       var app=angular.module("DemoApp",[]);
       app.controller("Home Controller",function($scope){
-       var masg = "Welcome to Angular JS"
+       var msg = "Welcome to Angular JS"
        $scope.msg;
 }
 </script>
