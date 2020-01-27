@@ -1,4 +1,4 @@
-Angulat HTTP Service
+Angular HTTP Service
 ====================
 
 A Service provide pre-defined buiseness logic which is used to perform any specific functionality
