@@ -6,7 +6,7 @@ Angular Basic Application
  <script>
       var app=angular.module("DemoApp",[]);
       app.controller("Home Controller",function($scope){
-       var msg = "Welcome to Angular JS"
+       var msg = "Welcome to Angular JS";
        $scope.msg;
 }
 </script>
