@@ -15,17 +15,17 @@ Angular Basic Application
 <h2>{{msg}}</h2>
 </body>  
 
-itrations using "ng-repeat"
+iterations using "ng-repeat"
 
 Example:-
 =======
 
 <scipt>
-  var app = angular.mdule("DemoApp",[]);
+  var app = angular.module("DemoApp",[]);
   app.controller("HomeControoler",function($scope){
           $scope.data={
                  {
-                  Category:"Electronics",Products:["Samsing TV","Mobile"]
+                  Category:"Electronics",Products:["Samsung TV","Mobile"]
                     },
                      {
                      Category:"Shoes",
@@ -40,7 +40,7 @@ Example:-
   <li ng-repeat="item in data">
         {{item.Category}}
    <ul>
-     <li ng-repeat="product in item.Productss">
+     <li ng-repeat="product in item.Products">
     {{products}}
     </li>
    </ul>
