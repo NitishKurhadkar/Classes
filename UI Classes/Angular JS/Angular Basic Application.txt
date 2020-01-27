@@ -35,7 +35,7 @@ Example:-
 })
 </script>
 </head>
-<bodyng-app="DemoApp" ng-controller="HomeController">
+<body ng-app="DemoApp" ng-controller="HomeController">
 <ol>
   <li ng-repeat="item in data">
         {{item.Category}}
